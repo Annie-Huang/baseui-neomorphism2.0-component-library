@@ -4,7 +4,10 @@ function App() {
   return (
     <main>
       <h1>Hello there</h1>
-      <Button>Submit</Button>
+      <div className='space-x-2'>
+        <Button>Submit</Button>
+        <Button>Cancel</Button>
+      </div>
     </main>
   );
 }
