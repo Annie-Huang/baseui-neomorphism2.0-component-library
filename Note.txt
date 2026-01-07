@@ -39,5 +39,13 @@ npm warn EBADENGINE }
 │
 ◇  Installing dependencies with npm...
 
-
 -------------------------------
+
+
+
+http://localhost:5173/
+
+
+
+
+
