@@ -1,3 +1,43 @@
 Build Your Own UI Library Course | React BaseUI (https://www.youtube.com/watch?v=QxZCjhyq5Ak)
 
+https://github.com/Annie-Huang/baseui-neomorphism2.0-component-library
 
+https://vite.dev/guide/
+========================================================================================
+
+PS C:\react> npm create vite@latest
+Need to install the following packages:
+create-vite@8.2.0
+Ok to proceed? (y) y
+
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: 'create-vite@8.2.0',
+npm warn EBADENGINE   required: { node: '^20.19.0 || >=22.12.0' },
+npm warn EBADENGINE   current: { node: 'v20.17.0', npm: '11.4.2' }
+npm warn EBADENGINE }
+
+> npx
+> create-vite
+
+│
+◇  Project name:
+│  baseui-neomorphism2.0-component-library
+│
+◇  Select a framework:
+│  React
+│
+◇  Select a variant:
+│  TypeScript
+│
+◇  Use rolldown-vite (Experimental)?:
+│  No
+│
+◇  Install with npm and start now?
+│  Yes
+│
+◇  Scaffolding project in C:\react\baseui-neomorphism2.0-component-library...
+│
+◇  Installing dependencies with npm...
+
+
+-------------------------------
