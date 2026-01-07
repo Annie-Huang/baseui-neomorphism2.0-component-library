@@ -1,5 +1,11 @@
-const Button = () => {
-  return <button>Submit</button>;
+import type { FC, ReactNode } from 'react';
+
+interface ButtonProps {
+  children?: ReactNode;
+}
+
+const Button: FC<ButtonProps> = ({ children }) => {
+  return <button>{children}</button>;
 };
 
 export default Button;
