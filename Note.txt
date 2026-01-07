@@ -3,6 +3,7 @@ Build Your Own UI Library Course | React BaseUI (https://www.youtube.com/watch?v
 https://github.com/Annie-Huang/baseui-neomorphism2.0-component-library
 
 https://vite.dev/guide/
+https://tailwindcss.com/docs/installation/using-vite
 ========================================================================================
 
 PS C:\react> npm create vite@latest
