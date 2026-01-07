@@ -1,0 +1,2 @@
+/* Just simple by importing tailwindcss, it will by default strip away browser styling on buttons, h1 etc*/
+@import "tailwindcss";
