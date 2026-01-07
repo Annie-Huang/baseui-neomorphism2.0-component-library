@@ -41,11 +41,9 @@ npm warn EBADENGINE }
 
 -------------------------------
 
-
-
 http://localhost:5173/
 
-
+PS C:\react\baseui-neomorphism2.0-component-library> npm i tailwindcss
 
 
 
