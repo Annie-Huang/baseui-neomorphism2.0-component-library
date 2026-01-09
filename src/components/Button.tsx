@@ -1,4 +1,4 @@
-import type { ButtonProps } from '@base-ui/react';
+import { type ButtonProps, mergeProps } from '@base-ui/react';
 // import type { FC, ReactNode } from 'react';
 import { useRender } from '@base-ui/react';
 import { cva } from 'class-variance-authority';
@@ -42,12 +42,12 @@ const buttonVariants = cva('inline-flex justify-center items-center', {
 });
 
 const Button = (props: ButtonProps) => {
-  const { render } = props;
+  const mergedProps = mergeProps(props, { classNme: buttonVariants() });
 
   const element = useRender({
     defaultTagName: 'button',
-    render,
-    props,
+    render: props.render,
+    props: mergedProps,
   });
 
   return element;
