@@ -1,4 +1,7 @@
-import { type ButtonProps, mergeProps } from '@base-ui/react';
+import {
+  type ButtonProps as BaseUIButtonProps,
+  mergeProps,
+} from '@base-ui/react';
 // import type { FC, ReactNode } from 'react';
 import { useRender } from '@base-ui/react';
 import { cva } from 'class-variance-authority';
@@ -44,8 +47,23 @@ const buttonVariants = cva(
   },
 );
 
+type ButtonVariant =
+  | 'default'
+  | 'primary'
+  | 'destructive'
+  | 'warning'
+  | null
+  | undefined;
+type ButtonSize = 'default' | 'icon' | null | undefined;
+type ButtonProps = BaseUIButtonProps & {
+  variant: ButtonVariant;
+  size: ButtonSize;
+};
+
 const Button = (props: ButtonProps) => {
-  const mergedProps = mergeProps(props, { className: buttonVariants() });
+  const mergedProps = mergeProps(props, {
+    className: buttonVariants({ variant: props.variant, size: props.size }),
+  });
 
   const element = useRender({
     defaultTagName: 'button',
