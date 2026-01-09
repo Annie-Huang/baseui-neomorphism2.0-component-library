@@ -22,24 +22,27 @@ import { cva } from 'class-variance-authority';
   return <button {...otherProps}>{children}</button>;
 };*/
 
-const buttonVariants = cva('inline-flex justify-center items-center', {
-  variants: {
-    variant: {
-      default: '',
-      primary: '',
-      destructive: '',
-      warning: '',
+const buttonVariants = cva(
+  'inline-flex justify-center items-center bg-red-200',
+  {
+    variants: {
+      variant: {
+        default: '',
+        primary: '',
+        destructive: '',
+        warning: '',
+      },
+      size: {
+        default: 'h-12 px-4',
+        icon: 'h-12 w-12',
+      },
     },
-    size: {
-      default: 'h-12 px-4',
-      icon: 'h-12 w-12',
+    defaultVariants: {
+      variant: 'default',
+      size: 'default',
     },
   },
-  defaultVariants: {
-    variant: 'default',
-    size: 'default',
-  },
-});
+);
 
 const Button = (props: ButtonProps) => {
   const mergedProps = mergeProps(props, { className: buttonVariants() });
