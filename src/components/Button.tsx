@@ -71,6 +71,7 @@ const Button = (props: ButtonProps) => {
     // className: buttonVariants({ variant: props.variant, size: props.size }),
     className: twMerge(
       buttonVariants({ variant: props.variant, size: props.size }), // so you can see color primary of the first button
+      props.className, // also allow you to overwrite from the className props you put into inline styling.
     ),
   });
 
