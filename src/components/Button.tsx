@@ -37,12 +37,12 @@ const buttonVariants = cva('inline-flex justify-center items-center', {
   },
   defaultVariants: {
     variant: 'default',
-    size: 'icon',
+    size: 'default',
   },
 });
 
 const Button = (props: ButtonProps) => {
-  const mergedProps = mergeProps(props, { classNme: buttonVariants() });
+  const mergedProps = mergeProps(props, { className: buttonVariants() });
 
   const element = useRender({
     defaultTagName: 'button',
