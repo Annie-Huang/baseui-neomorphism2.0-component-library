@@ -4,7 +4,7 @@ import {
 } from '@base-ui/react';
 // import type { FC, ReactNode } from 'react';
 import { useRender } from '@base-ui/react';
-import { cva } from 'class-variance-authority';
+import { cva, type VariantProps } from 'class-variance-authority';
 
 // interface ButtonProps {
 //   children?: ReactNode;
@@ -47,7 +47,7 @@ const buttonVariants = cva(
   },
 );
 
-type ButtonVariant =
+/*type ButtonVariant =
   | 'default'
   | 'primary'
   | 'destructive'
@@ -58,7 +58,12 @@ type ButtonSize = 'default' | 'icon' | null | undefined;
 type ButtonProps = BaseUIButtonProps & {
   variant: ButtonVariant;
   size: ButtonSize;
-};
+};*/
+
+// Much better way to do typing!
+interface ButtonProps
+  extends useRender.ComponentProps<'button'>,
+    VariantProps<typeof buttonVariants> {}
 
 const Button = (props: ButtonProps) => {
   const mergedProps = mergeProps(props, {
