@@ -1,6 +1,12 @@
 /* Just simple by importing tailwindcss, it will by default strip away browser styling on buttons, h1 etc*/
 @import "tailwindcss";
 
+/* Order that should go in:
+    base
+    components
+    utilities
+*/
+
 @theme {
   --color-background: var(--color-zinc-200);
   --color-foreground: var(--color-zinc-700);
@@ -12,5 +18,12 @@
     --color-background: var(--color-zinc-900);
     --color-foreground: var(--color-zinc-100);
     --color-primary: var(--color-indigo-400);
+  }
+}
+
+@layer base {
+  html, body {
+    /* How to apply --color-background varialble to bg and --color-foreground to text */
+    @apply bg-background text-foreground
   }
 }
