@@ -1,4 +1,4 @@
-// import type { ButtonProps } from '@base-ui/react';
+import type { ButtonProps } from '@base-ui/react';
 // import type { FC, ReactNode } from 'react';
 import { useRender } from '@base-ui/react';
 
@@ -10,10 +10,10 @@ import { useRender } from '@base-ui/react';
 // type ButtonProps = React.ComponentProps<'button'>;
 
 // Answer from hover over <button>.   <--- we use this one.
-type ButtonProps = React.DetailedHTMLProps<
-  React.ButtonHTMLAttributes<HTMLButtonElement>,
-  HTMLButtonElement
->;
+// type ButtonProps = React.DetailedHTMLProps<
+//   React.ButtonHTMLAttributes<HTMLButtonElement>,
+//   HTMLButtonElement
+// >;
 
 // const Button: FC<ButtonProps> = ({children}) => {
 /*const Button = (props: ButtonProps) => {
@@ -21,6 +21,8 @@ type ButtonProps = React.DetailedHTMLProps<
   return <button {...otherProps}>{children}</button>;
 };*/
 const Button = (props: ButtonProps) => {
+  const { render } = props;
+
   const element = useRender({
     defaultTagName: 'button',
     render,
