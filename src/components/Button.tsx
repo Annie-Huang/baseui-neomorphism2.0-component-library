@@ -1,6 +1,7 @@
 import type { ButtonProps } from '@base-ui/react';
 // import type { FC, ReactNode } from 'react';
 import { useRender } from '@base-ui/react';
+import { cva } from 'class-variance-authority';
 
 // interface ButtonProps {
 //   children?: ReactNode;
@@ -20,6 +21,26 @@ import { useRender } from '@base-ui/react';
   const { children, ...otherProps } = props;
   return <button {...otherProps}>{children}</button>;
 };*/
+
+const buttonVariants = cva('inline-flex justify-center items-center', {
+  variants: {
+    variant: {
+      default: '',
+      primary: '',
+      destructive: '',
+      warning: '',
+    },
+    size: {
+      default: 'h-12 px-4',
+      icon: 'h-12 w-12',
+    },
+  },
+  defaultVariants: {
+    variant: 'default',
+    size: 'icon',
+  },
+});
+
 const Button = (props: ButtonProps) => {
   const { render } = props;
 
