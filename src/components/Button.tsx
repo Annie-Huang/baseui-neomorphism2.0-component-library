@@ -1,5 +1,5 @@
 import {
-  type ButtonProps as BaseUIButtonProps,
+  // type ButtonProps as BaseUIButtonProps,
   mergeProps,
 } from '@base-ui/react';
 // import type { FC, ReactNode } from 'react';

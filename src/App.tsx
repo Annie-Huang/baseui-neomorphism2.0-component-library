@@ -5,8 +5,9 @@ function App() {
     <main>
       <h1>Hello there</h1>
       <div className='space-x-2'>
-        <Button className='text-primary'>Submit</Button>
-        <Button>Cancel</Button>
+        {/*<Button className='text-primary'>Submit</Button>*/}
+        <Button variant={'primary'}>Submit</Button>
+        <Button variant={'destructive'}>Cancel</Button>
       </div>
     </main>
   );
