@@ -54,6 +54,7 @@ https://www.npmjs.com/package/@base-ui-components/react
 PS C:\react\baseui-neomorphism2.0-component-library> npm i @base-ui/react @tailwindcss/vite
 
 PS C:\react\baseui-neomorphism2.0-component-library> npm i class-variance-authority
-    <--- use for defining variant for a component with different classNames. Good to use with tailwind
+    <--- Use for defining variant for a component with different classNames. Good to use with tailwind
 
 PS C:\react\baseui-neomorphism2.0-component-library> npm i tailwind-merge
+    <--- Allow the className define later to overwrite the one defined before head, it's like cascading.
