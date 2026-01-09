@@ -31,8 +31,8 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: '',
-        primary: '',
-        destructive: '',
+        primary: 'bg-blue-400',
+        destructive: 'bg-red-400',
         warning: '',
       },
       size: {
