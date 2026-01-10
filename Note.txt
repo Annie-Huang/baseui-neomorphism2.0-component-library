@@ -7,6 +7,10 @@ https://tailwindcss.com/docs/installation/using-vite
 
 https://www.npmjs.com/package/class-variance-authority
 https://cva.style/docs
+
+https://ui.shadcn.com/docs/dark-mode
+https://ui.shadcn.com/docs/dark-mode/vite
+
 ========================================================================================
 
 PS C:\react> npm create vite@latest
