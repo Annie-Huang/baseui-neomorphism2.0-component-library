@@ -29,7 +29,7 @@ import { twMerge } from 'tailwind-merge';
 const buttonVariants = cva(
   // Remember focus-visiable only visiable through tab, not keyboard click.
   // Also ring-foreground meaning ring property, and foreground color, just like text-foreground
-  'inline-flex justify-center items-center cursor-pointer hover:opacity-90 focus-visible:ring-foreground focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none rounded-xl border-3 border-foreground border-background shadow-raised bg-linear-to-tl disabled:opacity-50 disabled:pointer-events-none font-medium',
+  'inline-flex justify-center items-center cursor-pointer hover:opacity-90 focus-visible:ring-foreground focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none border-3 border-foreground border-background shadow-raised bg-linear-to-tl disabled:opacity-50 disabled:pointer-events-none font-medium',
   {
     variants: {
       variant: {
@@ -45,10 +45,15 @@ const buttonVariants = cva(
         default: 'h-12 px-4',
         icon: 'h-12 w-12',
       },
+      shape: {
+        default: 'rounded-xl',
+        circle: 'rounded-full',
+      },
     },
     defaultVariants: {
       variant: 'default',
       size: 'default',
+      shape: 'default',
     },
   },
 );
@@ -75,7 +80,11 @@ const Button = (props: ButtonProps) => {
   const mergedProps = mergeProps(props, {
     // className: buttonVariants({ variant: props.variant, size: props.size }),
     className: twMerge(
-      buttonVariants({ variant: props.variant, size: props.size }), // so you can see color primary of the first button
+      buttonVariants({
+        variant: props.variant,
+        size: props.size,
+        shape: props.shape,
+      }), // so you can see color primary of the first button
       props.className, // also allow you to overwrite from the className props you put into inline styling.
     ),
   });
