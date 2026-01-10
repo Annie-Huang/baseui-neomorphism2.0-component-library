@@ -26,27 +26,24 @@ import { twMerge } from 'tailwind-merge';
   return <button {...otherProps}>{children}</button>;
 };*/
 
-const buttonVariants = cva(
-  'inline-flex justify-center items-center bg-red-200',
-  {
-    variants: {
-      variant: {
-        default: '',
-        primary: 'bg-blue-400',
-        destructive: 'bg-red-400',
-        warning: '',
-      },
-      size: {
-        default: 'h-12 px-4',
-        icon: 'h-12 w-12',
-      },
+const buttonVariants = cva('inline-flex justify-center items-center', {
+  variants: {
+    variant: {
+      default: '',
+      primary: 'bg-blue-400',
+      destructive: 'bg-red-400',
+      warning: '',
     },
-    defaultVariants: {
-      variant: 'default',
-      size: 'default',
+    size: {
+      default: 'h-12 px-4',
+      icon: 'h-12 w-12',
     },
   },
-);
+  defaultVariants: {
+    variant: 'default',
+    size: 'default',
+  },
+});
 
 /*type ButtonVariant =
   | 'default'

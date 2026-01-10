@@ -7,13 +7,8 @@ function App() {
       <div className='space-x-2'>
         {/*<Button className='text-primary'>Submit</Button>*/}
         {/*<Button variant={'primary'} className='bg-amber-900'>Submit</Button>*/}
-        <Button
-          variant={'primary'}
-          className='bg-amber-900'
-          style={{ backgroundColor: 'green' }}
-        >
-          Submit
-        </Button>
+        {/*<Button variant={'primary'} className='bg-amber-900' style={{ backgroundColor: 'green' }}>Submit</Button>*/}
+        <Button variant={'primary'}>Submit</Button>
         <Button variant={'destructive'}>Cancel</Button>
       </div>
     </main>
