@@ -10,7 +10,7 @@ https://cva.style/docs
 
 https://ui.shadcn.com/docs/dark-mode
 https://ui.shadcn.com/docs/dark-mode/vite
-
+https://tailwindcss.com/docs/dark-mode#toggling-dark-mode-manually
 ========================================================================================
 
 PS C:\react> npm create vite@latest
