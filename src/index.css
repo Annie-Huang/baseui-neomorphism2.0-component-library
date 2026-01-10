@@ -15,8 +15,8 @@
   --color-warning: var(--color-orange-600);
   --color-shadow: rgba(0,0,0, 0.15);
   --color-highlight: var(--color-white);
-  --shadow-raised: 2px 2px 6px var(--color-shadow), -2px -2px 6px var(--color-highlight);
-  --shadow-inset: inset 2px 2px 6px var(--color-shadow), inset -2px -2px 6px var(--color-highlight); /* inset must be on both, if on the first one, it will look like press at the top-left corner only */
+  --shadow-raised: inset 0px 0px 0px var(--color-shadow), inset 0px 0px 0px var(--color-highlight), 2px 2px 6px var(--color-shadow), -2px -2px 6px var(--color-highlight);
+  --shadow-inset: 0px 0px 0px var(--color-shadow), 0px 0px 0px var(--color-highlight), inset 2px 2px 6px var(--color-shadow), inset -2px -2px 6px var(--color-highlight); /* inset must be on both, if on the first one, it will look like press at the top-left corner only */
   --color-muted: var(--color-zinc-300);
   --color-muted-foreground: var(--color-zinc-600);
 }
