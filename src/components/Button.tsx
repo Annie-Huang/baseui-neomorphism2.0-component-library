@@ -26,24 +26,29 @@ import { twMerge } from 'tailwind-merge';
   return <button {...otherProps}>{children}</button>;
 };*/
 
-const buttonVariants = cva('inline-flex justify-center items-center', {
-  variants: {
-    variant: {
-      default: '',
-      primary: 'bg-blue-400',
-      destructive: 'bg-red-400',
-      warning: '',
+const buttonVariants = cva(
+  // Remember focus-visiable only visiable through tab, not keyboard click.
+  // Also ring-foreground meaning ring property, and foreground color, just like text-foreground
+  'inline-flex justify-center items-center cursor-pointer hover:opacity-90 focus-visible:ring-foreground focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none rounded-xl border-3 border-foreground',
+  {
+    variants: {
+      variant: {
+        default: '',
+        primary: 'bg-blue-400',
+        destructive: 'bg-red-400',
+        warning: '',
+      },
+      size: {
+        default: 'h-12 px-4',
+        icon: 'h-12 w-12',
+      },
     },
-    size: {
-      default: 'h-12 px-4',
-      icon: 'h-12 w-12',
+    defaultVariants: {
+      variant: 'default',
+      size: 'default',
     },
   },
-  defaultVariants: {
-    variant: 'default',
-    size: 'default',
-  },
-});
+);
 
 /*type ButtonVariant =
   | 'default'
