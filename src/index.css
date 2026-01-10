@@ -28,7 +28,13 @@
   .dark {
     --color-background: var(--color-zinc-900);
     --color-foreground: var(--color-zinc-100);
+    --color-shadow: rgba(0, 0, 0, 0.7);
+    --color-highlight: rgba(255, 255, 255, 0.15);
     --color-primary: var(--color-indigo-400);
+    --color-destructive: var(--color-red-400);
+    --color-warning: var(--color-orange-400);
+    --color-muted: var(--color-zinc-700);
+    --color-muted-foreground: var(--color-zinc-400);
   }
 }
 
