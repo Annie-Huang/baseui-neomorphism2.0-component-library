@@ -11,6 +11,14 @@
   --color-background: var(--color-zinc-200);
   --color-foreground: var(--color-zinc-700);
   --color-primary: var(--color-indigo-600);
+  --color-destructive: var(--color-red-600);
+  --color-warning: var(--color-orange-600);
+  --color-shadow: rgba(0,0,0, 0.15);
+  --color-highlight: var(--color-white);
+  --shadow-raised: 2px 2px 6px var(--color-shadow), -2px -2px 6px var(--color-highlight);
+  --shadow-inset: inset 2px 2px 6px var(--color-shadow), -2px -2px 6px var(--color-highlight);
+  --color-muted: var(--color-zinc-300);
+  --color-muted-foreground: var(--color-zinc-600);
 }
 
 @layer theme {
