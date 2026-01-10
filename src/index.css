@@ -1,6 +1,9 @@
 /* Just simple by importing tailwindcss, it will by default strip away browser styling on buttons, h1 etc*/
 @import "tailwindcss";
 
+/* https://tailwindcss.com/docs/dark-mode#toggling-dark-mode-manually */
+@custom-variant dark (&:where(.dark, .dark *));
+
 /* Order that should go in:
     base
     components
