@@ -12,6 +12,10 @@ function App() {
         <Button variant={'primary'}>Submit</Button>
         <Button variant={'destructive'}>Cancel</Button>
         <Button variant={'warning'}>Warning</Button>
+
+        <Button variant={'primary'} disabled>
+          Submit
+        </Button>
       </div>
     </main>
   );
