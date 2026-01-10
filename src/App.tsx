@@ -1,9 +1,10 @@
 import Button from './components/Button.tsx';
+import Nav from './components/Nav.tsx';
 
 function App() {
   return (
     <main>
-      <h1>Hello there</h1>
+      <Nav />
       <div className='space-x-2'>
         <Button>Submit</Button>
         {/*<Button className='text-primary'>Submit</Button>*/}
