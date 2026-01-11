@@ -1,9 +1,6 @@
-import {
-  // type ButtonProps as BaseUIButtonProps,
-  mergeProps,
-} from '@base-ui/react';
+// import { type ButtonProps as BaseUIButtonProps } from '@base-ui/react';
 // import type { FC, ReactNode } from 'react';
-import { useRender } from '@base-ui/react';
+import { useRender, mergeProps } from '@base-ui/react';
 import { cva, type VariantProps } from 'class-variance-authority';
 import { twMerge } from 'tailwind-merge';
 
