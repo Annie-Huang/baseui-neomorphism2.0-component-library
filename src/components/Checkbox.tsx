@@ -2,8 +2,9 @@ import React from 'react';
 import { Checkbox, mergeProps } from '@base-ui/react';
 import { cva } from 'class-variance-authority';
 
+// Need to add 'inline-block' into checkboxVariants as Checkbox.Root is a <span> now (maybe it happened after migrating '@base-ui-components/react' into '@base-ui/react'?)
 const checkboxVariants = cva(
-  'h-5 w-5 shrink-0 rounded-sm border-1 border-highlight bg-background shadow-inset focus-visible:outline-none ' +
+  'inline-block h-5 w-5 shrink-0 rounded-sm border-1 border-highlight bg-background shadow-inset focus-visible:outline-none ' +
     'focus-visible:ring-2 focus-visible:ring-foreground focus-visible:ring-offset-2',
 );
 
