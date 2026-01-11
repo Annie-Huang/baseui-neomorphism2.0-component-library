@@ -67,3 +67,24 @@ export const CardTitle = (props: CardTitleProps) => {
 
   return element;
 };
+
+// Card Description
+const cardTitleVariants = cva('font-semibold leading-none tracking-tight');
+
+interface CardTitleProps
+  extends useRender.ComponentProps<'div'>,
+    VariantProps<typeof cardTitleVariants> {}
+
+export const CardTitle = (props: CardTitleProps) => {
+  const mergedProps = mergeProps(props, {
+    className: cardTitleVariants(),
+  });
+
+  const element = useRender({
+    defaultTagName: 'div',
+    render: props.render,
+    props: mergedProps,
+  });
+
+  return element;
+};
