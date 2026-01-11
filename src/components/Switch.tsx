@@ -1,7 +1,10 @@
 import { mergeProps, Switch, useRender } from '@base-ui/react';
 import { cva, type VariantProps } from 'class-variance-authority';
 
-const switchVariants = cva('cursor-pointer');
+const switchVariants = cva(
+  'cursor-pointer h-5.5 w-12 rounded-full focus-visible:outline-none focus-visible:ring-offset-2 ' +
+    'focus-visible:ring-foreground focus-visible:ring-2 bg-background shadow-inset data-[checked]:bg-primary',
+);
 const thumbVariants = cva('');
 
 // I got confused, we don't have a html element called 'switch', there is a material ui Switch component as well as React Native Switch component.
