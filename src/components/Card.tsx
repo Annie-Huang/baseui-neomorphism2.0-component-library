@@ -46,3 +46,24 @@ export const CardHeader = (props: CardHeaderProps) => {
 
   return element;
 };
+
+// Card Title
+const cardHeaderVariants = cva('flex flex-col, space-y-1.5 p-6');
+
+interface CardHeaderProps
+  extends useRender.ComponentProps<'div'>,
+    VariantProps<typeof cardHeaderVariants> {}
+
+export const CardHeader = (props: CardHeaderProps) => {
+  const mergedProps = mergeProps(props, {
+    className: cardHeaderVariants(),
+  });
+
+  const element = useRender({
+    defaultTagName: 'div',
+    render: props.render,
+    props: mergedProps,
+  });
+
+  return element;
+};
