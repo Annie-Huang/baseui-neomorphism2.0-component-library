@@ -6,8 +6,8 @@ import { Check } from 'lucide-react';
 // Need to add 'inline-block' into checkboxVariants as Checkbox.Root is a <span> now (maybe it happened after migrating '@base-ui-components/react' into '@base-ui/react'?)
 const checkboxVariants = cva(
   'inline-block h-5 w-5 shrink-0 rounded-sm border-1 border-highlight bg-background shadow-inset focus-visible:outline-none ' +
-    'focus-visible:ring-2 focus-visible:ring-foreground focus-visible:ring-offset-2 data-[checked]:bg-linear-tl ' +
     'data-[checked]:from-primary/5 data-[checked]:to-primary/25 data-[checked]:shadow-raised',
+    'focus-visible:ring-2 focus-visible:ring-foreground focus-visible:ring-offset-2 data-[checked]:bg-linear-to-tl ' +
 );
 
 const checkIndicatorVariants = cva('flex items-center justify-center');
