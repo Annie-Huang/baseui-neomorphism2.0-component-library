@@ -39,7 +39,7 @@ const buttonVariants = cva(
         // default: 'bg-background',
         // primary: 'bg-blue-400',
         // destructive: 'bg-red-400',
-        default: 'from-background to-highlight/75',
+        default: 'from-muted/5 to-muted/25',
         primary: 'text-primary from-primary/5 to-primary/25',
         destructive: 'text-destructive from-destructive/5 to-destructive/25',
         warning: 'text-warning from-warning/5 to-warning/25',

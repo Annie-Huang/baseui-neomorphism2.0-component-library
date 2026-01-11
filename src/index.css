@@ -17,8 +17,8 @@
   --color-destructive: var(--color-red-600);
   --color-warning: var(--color-orange-600);
   --color-border: var(--color-zinc-100); /* When you add a color variable, you will need to add for both, otherwise it will not take effect */
+  --color-shadow: rgba(0,0,0, 0.2);
   --color-edge: rgba( 255, 255, 255, 0.1); /* This makes the button cushion edge really stand out in dark mode */
-  --color-shadow: rgba(0,0,0, 0.15);
   --color-highlight: var(--color-white);
 
   /* In order to give that cushions look and nice animation when it is clicked, the --shadow-raise and --shadow-inset need to be in the same order, e.g. normal value first and then inset value last */
