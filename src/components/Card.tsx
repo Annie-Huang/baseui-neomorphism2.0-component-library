@@ -27,20 +27,20 @@ export const Card = (props: CardProps) => {
 };
 
 // Card Header
-const cardVariants = cva('rounded-2xl border-3 border-border', {
+const cardHeaderVariants = cva('rounded-2xl border-3 border-border', {
   variants: { variant: { raised: 'shadow-raised', inset: 'shadow-inset' } },
   defaultVariants: {
     variant: 'raised',
   },
 });
 
-interface CardProps
+interface CardHeaderProps
   extends useRender.ComponentProps<'div'>,
-    VariantProps<typeof cardVariants> {}
+    VariantProps<typeof cardHeaderVariants> {}
 
-export const Card = (props: CardProps) => {
+export const CardHeader = (props: CardHeaderProps) => {
   const mergedProps = mergeProps(props, {
-    className: cardVariants({ variant: props.variant }),
+    className: cardHeaderVariants({ variant: props.variant }),
   });
 
   const element = useRender({
