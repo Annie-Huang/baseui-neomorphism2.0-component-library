@@ -7,6 +7,8 @@ const checkboxVariants = cva(
     'focus-visible:ring-2 focus-visible:ring-foreground focus-visible:ring-offset-2',
 );
 
+const checkIndicatorVariants = cva('flex items-center justify-center h-5 w-5');
+
 // Since it does not have 'checkbox' so we will use typeof Checkbox.Root
 // interface CheckBoxProps extends React.ComponentProps<typeof Checkbox.Root> {}
 type CheckBoxProps = React.ComponentProps<typeof Checkbox.Root>; // It seems ESLint suggested to change it to type rather than interface if we don't overwrite things.
@@ -16,9 +18,13 @@ const NeuCheckbox = (props: CheckBoxProps) => {
     className: checkboxVariants(),
   });
 
+  const mergedIndicator = mergeProps(props, {
+    className: checkIndicatorVariants(),
+  });
+
   return (
     <Checkbox.Root {...mergedProps}>
-      <Checkbox.Indicator />
+      <Checkbox.Indicator {...mergedIndicator} />
     </Checkbox.Root>
   );
 };
