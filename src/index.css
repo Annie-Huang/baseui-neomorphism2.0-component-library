@@ -17,11 +17,12 @@
   --color-destructive: var(--color-red-600);
   --color-warning: var(--color-orange-600);
   --color-border: var(--color-zinc-100); /* When you add a color variable, you will need to add for both, otherwise it will not take effect */
+  --color-edge: rgba( 255, 255, 255, 0.1); /* This makes the button cushion edge really stand out in dark mode */
   --color-shadow: rgba(0,0,0, 0.15);
   --color-highlight: var(--color-white);
 
   /* In order to give that cushions look and nice animation when it is clicked, the --shadow-raise and --shadow-inset need to be in the same order, e.g. normal value first and then inset value last */
-  --shadow-raised: 2px 2px 6px var(--color-shadow), -2px -2px 6px var(--color-highlight), inset 0px 0px 0px var(--color-shadow), inset 0px 0px 0px var(--color-highlight);
+  --shadow-raised: 2px 2px 6px var(--color-shadow), -2px -2px 6px var(--color-highlight), inset 0px 0px 0px var(--color-shadow), inset 0px 0px 0px var(--color-highlight), inset 1px 1px 2px var(--color-edge);
   /*--shadow-inset: 0px 0px 0px var(--color-shadow), 0px 0px 0px var(--color-highlight), inset 2px 2px 6px var(--color-shadow), inset -2px -2px 6px var(--color-highlight); !* inset must be on both last value, if on the first one, it will look like press at the top-left corner only *!*/
   --shadow-inset: 1px 1px 2px var(--color-shadow), -1px -1px 2px var(--color-highlight), inset 2px 2px 6px var(--color-shadow), inset -2px -2px 6px var(--color-highlight); /* Keeping the border for inset, give better accessibility */
   --color-muted: var(--color-zinc-300);
