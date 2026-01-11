@@ -8,14 +8,15 @@ const cardVariants = cva('rounded-2xl', {
   },
 });
 
-interface CardProps extends useRender.ComponentProps<'div'>, VariantProps<typeof cardVariants>{}
+interface CardProps
+  extends useRender.ComponentProps<'div'>,
+    VariantProps<typeof cardVariants> {}
 
 export const Card = (props: CardProps) => {
-
   const element = useRender({
-    defaultTagName: 'div'
-    render:,
-    props: merged
-  })
+    defaultTagName: 'div',
+    render: props.render,
+    props: merged,
+  });
   return <div></div>;
 };
