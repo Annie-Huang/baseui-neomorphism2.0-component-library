@@ -34,13 +34,13 @@ function App() {
             </CardHeader>
             <CardContent>
               <ul>
-                <li>this is one benefit</li>
-                <li>this is one benefit</li>
+                <li>this is one benefit fewafewa fewafewa</li>
+                <li>this is one benefit eafwfew</li>
                 <li>this is one benefit</li>
               </ul>
             </CardContent>
             <CardFooter>
-              <Button>Purchase now</Button>
+              <Button variant={'primary'}>Purchase now</Button>
             </CardFooter>
           </Card>
         </div>
