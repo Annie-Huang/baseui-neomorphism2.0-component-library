@@ -1,4 +1,4 @@
-import { Switch, useRender } from '@base-ui/react';
+import { mergeProps, Switch, useRender } from '@base-ui/react';
 import { cva, type VariantProps } from 'class-variance-authority';
 
 const switchVariants = cva('cursor-pointer');
@@ -10,8 +10,10 @@ interface SwitchProps
     VariantProps<typeof switchVariants> {}
 
 const NeuSwitch = (props: SwitchProps) => {
+  const mergedProps = mergeProps(props, { className: switchVariants });
+
   return (
-    <Switch.Root {...props}>
+    <Switch.Root {...mergedProps}>
       <Switch.Thumb />
     </Switch.Root>
   );
