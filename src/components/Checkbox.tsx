@@ -1,6 +1,7 @@
 import React from 'react';
 import { Checkbox, mergeProps } from '@base-ui/react';
 import { cva } from 'class-variance-authority';
+import { Check } from 'lucide-react';
 
 // Need to add 'inline-block' into checkboxVariants as Checkbox.Root is a <span> now (maybe it happened after migrating '@base-ui-components/react' into '@base-ui/react'?)
 const checkboxVariants = cva(
@@ -9,7 +10,7 @@ const checkboxVariants = cva(
     'data-[checked]:from-primary/5 data-[checked]:to-primary/25 data-[checked]:shadow-raised',
 );
 
-const checkIndicatorVariants = cva('flex items-center justify-center h-5 w-5');
+const checkIndicatorVariants = cva('flex items-center justify-center');
 
 // Since it does not have 'checkbox' so we will use typeof Checkbox.Root
 // interface CheckBoxProps extends React.ComponentProps<typeof Checkbox.Root> {}
@@ -26,7 +27,9 @@ const NeuCheckbox = (props: CheckBoxProps) => {
 
   return (
     <Checkbox.Root {...mergedProps}>
-      <Checkbox.Indicator {...mergedIndicator} />
+      <Checkbox.Indicator {...mergedIndicator}>
+        <Check className='w-3 h-3 text-primary' />
+      </Checkbox.Indicator>
     </Checkbox.Root>
   );
 };
