@@ -10,7 +10,8 @@ const checkboxVariants = cva(
     'duration-350 ease-out transition-all data-[checked]:from-primary/5 data-[checked]:to-primary/25 data-[checked]:shadow-raised',
 );
 
-const checkIndicatorVariants = cva('flex items-center justify-center');
+// Need to add 'h-full' because the <Checkbox.Indicator> is a <span> and without h-full, it cannot center the check icon
+const checkIndicatorVariants = cva('flex items-center justify-center h-full');
 
 // Since it does not have 'checkbox' so we will use typeof Checkbox.Root
 // interface CheckBoxProps extends React.ComponentProps<typeof Checkbox.Root> {}
