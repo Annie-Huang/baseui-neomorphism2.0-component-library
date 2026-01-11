@@ -44,7 +44,7 @@ function App() {
             <CardFooter>
               {/*<Button variant={'primary'}>Purchase now</Button>*/}
               <NeuSwitch />
-              <NeuCheckbox />
+              <NeuCheckbox disabled />
             </CardFooter>
           </Card>
         </div>
