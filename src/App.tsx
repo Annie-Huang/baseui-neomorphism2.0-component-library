@@ -41,7 +41,7 @@ function App() {
               </ul>
             </CardContent>
             <CardFooter>
-              <Button variant={'primary'}>Purchase now</Button>
+              {/*<Button variant={'primary'}>Purchase now</Button>*/}
               <NeuSwitch />
             </CardFooter>
           </Card>
