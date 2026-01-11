@@ -109,3 +109,24 @@ export const CardContent = (props: CardContentProps) => {
 
   return element;
 };
+
+// Card Footer
+const cardContentVariants = cva('p-6 pt-0');
+
+interface CardContentProps
+  extends useRender.ComponentProps<'div'>,
+    VariantProps<typeof cardContentVariants> {}
+
+export const CardContent = (props: CardContentProps) => {
+  const mergedProps = mergeProps(props, {
+    className: cardContentVariants(),
+  });
+
+  const element = useRender({
+    defaultTagName: 'div',
+    render: props.render,
+    props: mergedProps,
+  });
+
+  return element;
+};
