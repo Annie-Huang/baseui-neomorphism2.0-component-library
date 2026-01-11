@@ -1,5 +1,5 @@
 import React from 'react';
-import { Checkbox } from '@base-ui/react';
+import { Checkbox, mergeProps } from '@base-ui/react';
 import { cva } from 'class-variance-authority';
 
 const checkboxVariants = cva(
@@ -12,8 +12,12 @@ const checkboxVariants = cva(
 type CheckBoxProps = React.ComponentProps<typeof Checkbox.Root>; // It seems ESLint suggested to change it to type rather than interface if we don't overwrite things.
 
 const NeuCheckbox = (props: CheckBoxProps) => {
+  const mergedProps = mergeProps(props, {
+    className: checkboxVariants(),
+  });
+
   return (
-    <Checkbox.Root>
+    <Checkbox.Root {...mergedProps}>
       <Checkbox.Indicator />
     </Checkbox.Root>
   );
