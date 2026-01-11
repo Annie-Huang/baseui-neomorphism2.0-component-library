@@ -6,8 +6,10 @@ const switchVariants = cva(
   'block cursor-pointer h-5.5 w-12 rounded-full focus-visible:outline-none focus-visible:ring-offset-2 ' +
     'focus-visible:ring-foreground focus-visible:ring-2 bg-background shadow-inset data-[checked]:bg-primary',
 );
+
+// Need to add top-0.25 for the relative position. Otherwise, the top of thumb will touch the top of root and it will be a align center.
 const thumbVariants = cva(
-  'h-5 w-5 bg-red-background relative rounded-full block shadow-inset translate-x-0 data-[checked]:translate-x-6.5',
+  'top-0.25 h-5 w-5 bg-background relative rounded-full block ease-out transition-all duration-350 shadow-inset translate-x-0 data-[checked]:translate-x-6.5',
 );
 
 // I got confused, we don't have a html element called 'switch', there is a material ui Switch component as well as React Native Switch component.
