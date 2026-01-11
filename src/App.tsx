@@ -8,6 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from './components/Card.tsx';
+import NeuSwitch from './components/Switch.tsx';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
             </CardContent>
             <CardFooter>
               <Button variant={'primary'}>Purchase now</Button>
+              <NeuSwitch />
             </CardFooter>
           </Card>
         </div>
