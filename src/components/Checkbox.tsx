@@ -5,13 +5,14 @@ import { Check } from 'lucide-react';
 
 // Need to add 'inline-block' into checkboxVariants as Checkbox.Root is a <span> now (maybe it happened after migrating '@base-ui-components/react' into '@base-ui/react'?)
 const checkboxVariants = cva(
-  'inline-block h-5 w-5 shrink-0 rounded-sm border-1 border-highlight bg-background shadow-inset focus-visible:outline-none ' +
+  'inline-block h-5 w-5 relative shrink-0 rounded-sm border-1 border-highlight bg-background shadow-inset focus-visible:outline-none ' +
     'focus-visible:ring-2 focus-visible:ring-foreground focus-visible:ring-offset-2 data-[checked]:bg-linear-to-tl ' +
     'duration-350 ease-out transition-all data-[checked]:from-primary/5 data-[checked]:to-primary/25 data-[checked]:shadow-raised',
 );
 
-// Need to add 'h-full' because the <Checkbox.Indicator> is a <span> and without h-full, it cannot center the check icon
-const checkIndicatorVariants = cva('flex items-center justify-center h-full');
+const checkIndicatorVariants = cva(
+  'flex items-center justify-center absolute top-1/2 left-1/2 -translate-1/2',
+);
 
 // Since it does not have 'checkbox' so we will use typeof Checkbox.Root
 // interface CheckBoxProps extends React.ComponentProps<typeof Checkbox.Root> {}
