@@ -4,12 +4,11 @@ import { cva, type VariantProps } from 'class-variance-authority';
 // Need to add 'block' into switchVariant as Switch.Root is a <span> now (maybe it happened after migrating '@base-ui-components/react' into '@base-ui/react'?)
 const switchVariants = cva(
   'block cursor-pointer h-5.5 w-12 rounded-full focus-visible:outline-none focus-visible:ring-offset-2 ' +
-    'focus-visible:ring-foreground focus-visible:ring-2 bg-background shadow-inset data-[checked]:bg-primary',
+    'focus-visible:ring-foreground focus-visible:ring-2 bg-background shadow-inset data-[checked]:bg-primary border-1 ' +
+    'border-highlight data-[checked]:border-primary',
 );
-
-// Need to add top-0.25 for the relative position. Otherwise, the top of thumb will touch the top of root and it will be a align center.
 const thumbVariants = cva(
-  'top-0.25 h-5 w-5 bg-background relative rounded-full block ease-out transition-all duration-350 border-1 border-highlight ' +
+  'h-5 w-5 bg-background relative rounded-full block ease-out transition-all duration-350 border-1 border-highlight ' +
     'after:w-1 after:h-1 after:absolute after:top-1/2 after:left-1/2 after:-translate-1/2 after:bg-muted-foreground after:rounded-full ' +
     'shadow-inset translate-x-0 data-[checked]:translate-x-6.5 data-[checked]:after:bg-primary',
 );
