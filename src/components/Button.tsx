@@ -30,9 +30,9 @@ const buttonVariants = cva(
   // Remember focus-visiable only visiable through tab, not keyboard click.
   // Also ring-foreground meaning ring property, and foreground color, just like text-foreground
   'inline-flex justify-center items-center cursor-pointer hover:opacity-90 focus-visible:ring-foreground ' +
-    'focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none border-3 border-foreground ' +
-    'border-background shadow-raised bg-linear-to-tl disabled:opacity-50 disabled:pointer-events-none font-medium ' +
-    'active:shadow-inset transition-all duration-250 ease-out active:scale-97',
+    'focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none border-3 border-border shadow-raised ' +
+    'bg-linear-to-tl disabled:opacity-50 disabled:pointer-events-none font-medium active:shadow-inset transition-all ' +
+    'duration-250 ease-out active:scale-97',
   {
     variants: {
       variant: {
