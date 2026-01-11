@@ -11,7 +11,8 @@ const checkboxVariants = cva(
 );
 
 const checkIndicatorVariants = cva(
-  'flex items-center justify-center absolute top-1/2 left-1/2 -translate-1/2',
+  // 'flex items-center justify-center absolute top-1/2 left-1/2 -translate-1/2',
+  'absolute top-1/2 left-1/2 -translate-1/2',
 );
 
 // Since it does not have 'checkbox' so we will use typeof Checkbox.Root
