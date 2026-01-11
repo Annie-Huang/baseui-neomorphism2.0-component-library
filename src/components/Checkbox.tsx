@@ -8,9 +8,8 @@ const checkboxVariants = cva(
 );
 
 // Since it does not have 'checkbox' so we will use typeof Checkbox.Root
-interface CheckBoxProps extends React.ComponentProps<typeof Checkbox.Root> {
-  className?: string;
-}
+// interface CheckBoxProps extends React.ComponentProps<typeof Checkbox.Root> {}
+type CheckBoxProps = React.ComponentProps<typeof Checkbox.Root>; // It seems ESLint suggested to change it to type rather than interface if we don't overwrite things.
 
 const NeuCheckbox = (props: CheckBoxProps) => {
   return (
