@@ -90,15 +90,15 @@ export const CardDescription = (props: CardDescriptionProps) => {
 };
 
 // Card Content
-const cardDescriptionVariants = cva('text-sm text-muted-foreground');
+const cardContentVariants = cva('p-6 pt-0');
 
-interface CardDescriptionProps
+interface CardContentProps
   extends useRender.ComponentProps<'div'>,
-    VariantProps<typeof cardDescriptionVariants> {}
+    VariantProps<typeof cardContentVariants> {}
 
-export const CardDescription = (props: CardDescriptionProps) => {
+export const CardContent = (props: CardContentProps) => {
   const mergedProps = mergeProps(props, {
-    className: cardDescriptionVariants(),
+    className: cardContentVariants(),
   });
 
   const element = useRender({
