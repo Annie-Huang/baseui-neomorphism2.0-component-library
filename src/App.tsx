@@ -1,5 +1,6 @@
 import Button from './components/Button.tsx';
 import Nav from './components/Nav.tsx';
+import { Card } from './components/Card.tsx';
 
 function App() {
   return (
@@ -17,6 +18,13 @@ function App() {
         <Button variant={'primary'} disabled>
           Submit
         </Button>
+
+        <div className='m-6'>
+          <Card>
+            <h1>Hello</h1>
+            <p>Quick paragraph</p>
+          </Card>
+        </div>
       </div>
     </main>
   );
