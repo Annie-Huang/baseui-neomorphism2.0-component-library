@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from './components/Card.tsx';
 import NeuSwitch from './components/Switch.tsx';
+import NeuCheckbox from './components/Checkbox.tsx';
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
             <CardFooter>
               {/*<Button variant={'primary'}>Purchase now</Button>*/}
               <NeuSwitch />
+              <NeuCheckbox />
             </CardFooter>
           </Card>
         </div>
