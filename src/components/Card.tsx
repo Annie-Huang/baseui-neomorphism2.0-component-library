@@ -48,7 +48,7 @@ export const CardHeader = (props: CardHeaderProps) => {
 };
 
 // Card Title
-const cardTitleVariants = cva('flex flex-col, space-y-1.5 p-6');
+const cardTitleVariants = cva('font-semibold leading-none tracking-tight');
 
 interface CardTitleProps
   extends useRender.ComponentProps<'div'>,
