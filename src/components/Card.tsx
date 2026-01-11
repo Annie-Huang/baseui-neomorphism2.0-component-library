@@ -69,15 +69,15 @@ export const CardTitle = (props: CardTitleProps) => {
 };
 
 // Card Description
-const cardTitleVariants = cva('font-semibold leading-none tracking-tight');
+const cardDescriptionVariants = cva('text-sm text-muted-foreground');
 
-interface CardTitleProps
+interface CardDescriptionProps
   extends useRender.ComponentProps<'div'>,
-    VariantProps<typeof cardTitleVariants> {}
+    VariantProps<typeof cardDescriptionVariants> {}
 
-export const CardTitle = (props: CardTitleProps) => {
+export const CardDescription = (props: CardDescriptionProps) => {
   const mergedProps = mergeProps(props, {
-    className: cardTitleVariants(),
+    className: cardDescriptionVariants(),
   });
 
   const element = useRender({
