@@ -88,3 +88,24 @@ export const CardDescription = (props: CardDescriptionProps) => {
 
   return element;
 };
+
+// Card Content
+const cardDescriptionVariants = cva('text-sm text-muted-foreground');
+
+interface CardDescriptionProps
+  extends useRender.ComponentProps<'div'>,
+    VariantProps<typeof cardDescriptionVariants> {}
+
+export const CardDescription = (props: CardDescriptionProps) => {
+  const mergedProps = mergeProps(props, {
+    className: cardDescriptionVariants(),
+  });
+
+  const element = useRender({
+    defaultTagName: 'div',
+    render: props.render,
+    props: mergedProps,
+  });
+
+  return element;
+};
