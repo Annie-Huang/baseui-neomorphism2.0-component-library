@@ -27,7 +27,7 @@ export const Card = (props: CardProps) => {
 };
 
 // Card Header
-const cardHeaderVariants = cva('flex flex-col, space-y-1.5 p-6');
+const cardHeaderVariants = cva('flex flex-col space-y-1.5 p-6');
 
 interface CardHeaderProps
   extends useRender.ComponentProps<'div'>,

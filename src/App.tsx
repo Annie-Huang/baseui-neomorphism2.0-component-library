@@ -1,6 +1,13 @@
 import Button from './components/Button.tsx';
 import Nav from './components/Nav.tsx';
-import { Card } from './components/Card.tsx';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from './components/Card.tsx';
 
 function App() {
   return (
@@ -21,8 +28,20 @@ function App() {
 
         <div className='m-6'>
           <Card>
-            <h1>Hello</h1>
-            <p>Quick paragraph</p>
+            <CardHeader>
+              <CardTitle>This is my title</CardTitle>
+              <CardDescription>Ths is the price of my product</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <ul>
+                <li>this is one benefit</li>
+                <li>this is one benefit</li>
+                <li>this is one benefit</li>
+              </ul>
+            </CardContent>
+            <CardFooter>
+              <Button>Purchase now</Button>
+            </CardFooter>
           </Card>
         </div>
       </div>
