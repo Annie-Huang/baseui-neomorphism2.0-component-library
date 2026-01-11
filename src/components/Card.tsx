@@ -48,15 +48,15 @@ export const CardHeader = (props: CardHeaderProps) => {
 };
 
 // Card Title
-const cardHeaderVariants = cva('flex flex-col, space-y-1.5 p-6');
+const cardTitleVariants = cva('flex flex-col, space-y-1.5 p-6');
 
-interface CardHeaderProps
+interface CardTitleProps
   extends useRender.ComponentProps<'div'>,
-    VariantProps<typeof cardHeaderVariants> {}
+    VariantProps<typeof cardTitleVariants> {}
 
-export const CardHeader = (props: CardHeaderProps) => {
+export const CardTitle = (props: CardTitleProps) => {
   const mergedProps = mergeProps(props, {
-    className: cardHeaderVariants(),
+    className: cardTitleVariants(),
   });
 
   const element = useRender({
