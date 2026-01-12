@@ -50,6 +50,14 @@ function App() {
               <NeuSlider variant={'secondary'} />
             </CardFooter>
           </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Progress bars</CardTitle>
+              <CardDescription>Simple vertical/horizontal bars</CardDescription>
+            </CardHeader>
+            <CardContent></CardContent>
+          </Card>
         </div>
       </div>
     </main>
