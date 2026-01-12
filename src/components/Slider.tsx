@@ -1,4 +1,4 @@
-import { Slider } from '@base-ui/react';
+import { mergeProps, Slider } from '@base-ui/react';
 import React from 'react';
 import { cva, type VariantProps } from 'class-variance-authority';
 
@@ -27,8 +27,12 @@ interface SliderProps
     VariantProps<typeof sliderVariants> {}
 
 const NeuSlider = (props: SliderProps) => {
+  const rootMerge = mergeProps(props, {
+    className: sliderVariants(),
+  });
+
   return (
-    <Slider.Root>
+    <Slider.Root {...rootMerge}>
       <Slider.Control>
         <Slider.Track>
           <Slider.Indicator />
