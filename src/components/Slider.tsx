@@ -34,10 +34,10 @@ const NeuSlider = (props: SliderProps) => {
   return (
     <Slider.Root {...rootMerge}>
       <Slider.Control>
-        <Slider.Track>
-          <Slider.Indicator />
+        <Slider.Track className={trackVariants()}>
+          <Slider.Indicator className={rangeVariants()} />
         </Slider.Track>
-        <Slider.Thumb />
+        <Slider.Thumb className={thumbVariants()} />
       </Slider.Control>
     </Slider.Root>
   );
