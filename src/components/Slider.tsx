@@ -10,7 +10,7 @@ const rangeVariants = cva('absolute h-full rounded-full', {
   variants: {
     variant: {
       default: 'bg-linear-to-l from-primary to-primary/75',
-      secondary: 'bg-linear-to-l from-muted to-muted/75',
+      secondary: 'bg-linear-to-l from-muted-foreground to-muted-foreground/75',
     },
   },
   defaultVariants: {
