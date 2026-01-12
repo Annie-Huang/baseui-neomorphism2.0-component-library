@@ -18,8 +18,10 @@ const rangeVariants = cva('absolute h-full rounded-full', {
   },
 });
 
+// Make sure you only use transition-shadow, not transition-all
 const thumbVariants = cva(
-  'rounded-full border-1 border-highlight bg-background',
+  'rounded-full border-1 border-highlight bg-background h-5 w-5 cursor-pointer shadow-inset active:shadow-raised ' +
+    'duration-350 transition-shadow ease-out',
 );
 
 interface SliderProps
