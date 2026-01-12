@@ -16,8 +16,13 @@ const NeuProgress = (props: ProgressProps) => {
     className: progressVariants(),
   });
 
+  // Not sure why we get this error in Progress.Root:
+  // Property value is missing in type { children: Element; } but required in type ProgressRootProp
+  // But this is the work around:
+  const { value, ...otherProps } = rootMerge;
+
   return (
-    <Progress.Root {...rootMerge}>
+    <Progress.Root value={value} {...otherProps}>
       <Progress.Track>
         <Progress.Indicator />
       </Progress.Track>
