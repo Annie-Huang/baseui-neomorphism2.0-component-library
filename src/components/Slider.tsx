@@ -33,7 +33,8 @@ const NeuSlider = (props: SliderProps) => {
 
   return (
     <Slider.Root {...rootMerge}>
-      <Slider.Control>
+      {/* Without the className={'relative'}, you will see a dot at the top when you slide the slider. */}
+      <Slider.Control className={'relative'}>
         <Slider.Track className={trackVariants()}>
           <Slider.Indicator className={rangeVariants()} />
         </Slider.Track>
