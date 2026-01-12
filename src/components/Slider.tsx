@@ -18,6 +18,10 @@ const rangeVariants = cva('absolute h-full rounded-full', {
   },
 });
 
+const thumbVariants = cva(
+  'rounded-full border-1 border-highlight bg-background',
+);
+
 interface SliderProps
   extends React.ComponentProps<typeof Slider.Root>,
     VariantProps<typeof sliderVariants> {}
