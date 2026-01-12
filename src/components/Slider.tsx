@@ -7,6 +7,7 @@ const NeuSlider = (props) => {
         <Slider.Track>
           <Slider.Indicator />
         </Slider.Track>
+        <Slider.Thumb />
       </Slider.Control>
     </Slider.Root>
   );
