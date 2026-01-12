@@ -11,6 +11,7 @@ import {
 // import NeuSwitch from './components/Switch.tsx';
 // import NeuCheckbox from './components/Checkbox.tsx';
 import NeuSlider from './components/Slider.tsx';
+import NeuProgress from './components/Progress.tsx';
 
 function App() {
   return (
@@ -56,7 +57,11 @@ function App() {
               <CardTitle>Progress bars</CardTitle>
               <CardDescription>Simple vertical/horizontal bars</CardDescription>
             </CardHeader>
-            <CardContent></CardContent>
+            <CardContent>
+              <NeuProgress />
+              <NeuProgress />
+              <NeuProgress />
+            </CardContent>
           </Card>
         </div>
       </div>
