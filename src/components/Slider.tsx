@@ -26,7 +26,7 @@ const thumbVariants = cva(
 
 interface SliderProps
   extends React.ComponentProps<typeof Slider.Root>,
-    VariantProps<typeof sliderVariants> {}
+    VariantProps<typeof rangeVariants> {}
 
 const NeuSlider = (props: SliderProps) => {
   const rootMerge = mergeProps(props, {
