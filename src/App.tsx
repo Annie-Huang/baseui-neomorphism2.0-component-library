@@ -10,6 +10,7 @@ import {
 } from './components/Card.tsx';
 import NeuSwitch from './components/Switch.tsx';
 import NeuCheckbox from './components/Checkbox.tsx';
+import NeuSlider from './components/Slider.tsx';
 
 function App() {
   return (
@@ -43,8 +44,10 @@ function App() {
             </CardContent>
             <CardFooter>
               {/*<Button variant={'primary'}>Purchase now</Button>*/}
-              <NeuSwitch />
-              <NeuCheckbox disabled />
+              {/*<NeuSwitch />*/}
+              {/*<NeuCheckbox disabled />*/}
+              {/*<NeuCheckbox />*/}
+              <NeuSlider></NeuSlider>
             </CardFooter>
           </Card>
         </div>
