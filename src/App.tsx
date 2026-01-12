@@ -8,8 +8,8 @@ import {
   CardHeader,
   CardTitle,
 } from './components/Card.tsx';
-import NeuSwitch from './components/Switch.tsx';
-import NeuCheckbox from './components/Checkbox.tsx';
+// import NeuSwitch from './components/Switch.tsx';
+// import NeuCheckbox from './components/Checkbox.tsx';
 import NeuSlider from './components/Slider.tsx';
 
 function App() {
@@ -47,7 +47,7 @@ function App() {
               {/*<NeuSwitch />*/}
               {/*<NeuCheckbox disabled />*/}
               {/*<NeuCheckbox />*/}
-              <NeuSlider></NeuSlider>
+              <NeuSlider variant={'secondary'} />
             </CardFooter>
           </Card>
         </div>
