@@ -38,7 +38,11 @@ const NeuSlider = (props: SliderProps) => {
       {/* Without the className={'relative'}, you will see a dot at the top when you slide the slider. */}
       <Slider.Control className={'relative'}>
         <Slider.Track className={trackVariants()}>
-          <Slider.Indicator className={rangeVariants()} />
+          <Slider.Indicator
+            className={rangeVariants({
+              variant: props.variant,
+            })}
+          />
         </Slider.Track>
         <Slider.Thumb className={thumbVariants()} />
       </Slider.Control>
