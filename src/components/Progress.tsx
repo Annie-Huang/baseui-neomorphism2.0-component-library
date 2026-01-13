@@ -58,6 +58,16 @@ const NeuProgress = (props: ProgressProps) => {
             variant: props.variant,
             orientation: props.orientation,
           })}
+          style={
+            props.orientation === 'vertical'
+              ? {
+                  height: `${props.value}%`,
+                  position: 'absolute',
+                  width: '100%',
+                  bottom: 0,
+                }
+              : {}
+          }
         />
       </Progress.Track>
     </Progress.Root>
