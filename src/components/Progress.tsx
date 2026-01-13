@@ -49,7 +49,12 @@ const NeuProgress = (props: ProgressProps) => {
   return (
     <Progress.Root value={value} {...otherProps}>
       <Progress.Track className='h-full w-full'>
-        <Progress.Indicator />
+        <Progress.Indicator
+          className={progressIndicatorVariants({
+            variant: props.variant,
+            orientation: props.orientation,
+          })}
+        />
       </Progress.Track>
     </Progress.Root>
   );
