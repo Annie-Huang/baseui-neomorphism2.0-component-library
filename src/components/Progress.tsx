@@ -4,6 +4,17 @@ import { cva, type VariantProps } from 'class-variance-authority';
 const progressVariants = cva(
   'relative overflow-hidden rounded-full bg-background shadow-inset focus:outline-none focus-visible:ring-2 ' +
     'focus-visible:ring-primary focus-visible:ring-offset-2',
+  {
+    variants: {
+      orientation: {
+        horizontal: 'w-full h-5',
+        vertical: 'h-full w-5',
+      },
+    },
+    defaultVariants: {
+      orientation: 'horizontal',
+    },
+  },
 );
 
 // Great that useRender got 'progress' component
