@@ -17,6 +17,19 @@ const progressVariants = cva(
   },
 );
 
+const progressIndicatorVariants = cva('rounded-full border-none', {
+  variants: {
+    orientation: {
+      horizontal: 'bg-linear-to-l',
+      vertical: 'bg-linear-to-t',
+    },
+    variant: {
+      default: 'from-primary to-primary/75',
+      secondary: 'from-muted-foreground to-muted-foreground/75',
+    },
+  },
+});
+
 // Great that useRender got 'progress' component
 interface ProgressProps
   extends useRender.ComponentProps<'progress'>,
