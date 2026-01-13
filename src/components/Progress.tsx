@@ -42,7 +42,7 @@ interface ProgressProps
 
 const NeuProgress = (props: ProgressProps) => {
   const rootMerge = mergeProps(props, {
-    className: progressVariants(),
+    className: progressVariants({ orientation: props.orientation }),
   });
 
   // Not sure why we get this error in Progress.Root:
