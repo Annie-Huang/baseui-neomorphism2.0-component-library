@@ -57,7 +57,7 @@ function App() {
               <CardTitle>Progress bars</CardTitle>
               <CardDescription>Simple vertical/horizontal bars</CardDescription>
             </CardHeader>
-            <CardContent>
+            <CardContent className='space-y-4'>
               <NeuProgress />
               <NeuProgress />
               <NeuProgress />
