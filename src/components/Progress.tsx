@@ -33,7 +33,8 @@ const progressIndicatorVariants = cva('rounded-full border-none', {
 // Great that useRender got 'progress' component
 interface ProgressProps
   extends useRender.ComponentProps<'progress'>,
-    VariantProps<typeof progressVariants> {}
+    VariantProps<typeof progressVariants>,
+    VariantProps<typeof progressIndicatorVariants> {}
 
 const NeuProgress = (props: ProgressProps) => {
   const rootMerge = mergeProps(props, {
