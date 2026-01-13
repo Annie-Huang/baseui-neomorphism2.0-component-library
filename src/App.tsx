@@ -58,9 +58,9 @@ function App() {
               <CardDescription>Simple vertical/horizontal bars</CardDescription>
             </CardHeader>
             <CardContent className='space-y-4'>
-              <NeuProgress />
-              <NeuProgress />
-              <NeuProgress />
+              <NeuProgress min={0} max={100} value={25} />
+              <NeuProgress min={0} max={100} value={25} />
+              <NeuProgress min={0} max={100} value={25} />
             </CardContent>
           </Card>
         </div>
