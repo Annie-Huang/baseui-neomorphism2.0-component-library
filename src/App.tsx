@@ -57,15 +57,15 @@ function App() {
               <CardTitle>Progress bars</CardTitle>
               <CardDescription>Simple vertical/horizontal bars</CardDescription>
             </CardHeader>
-            {/*<CardContent className='space-y-4'>*/}
-            {/*<NeuProgress max={100} value={25} />*/}
-            {/*<NeuProgress max={100} value={50} />*/}
-            {/*<NeuProgress max={100} value={75} />*/}
-            {/*</CardContent>*/}
             <CardContent className='space-y-4 h-36 flex gap-4'>
               <NeuProgress orientation={'vertical'} max={100} value={25} />
               <NeuProgress orientation={'vertical'} max={100} value={50} />
               <NeuProgress orientation={'vertical'} max={100} value={75} />
+            </CardContent>
+            <CardContent className='space-y-4'>
+              <NeuProgress variant={'secondary'} max={100} value={25} />
+              <NeuProgress max={100} value={50} />
+              <NeuProgress max={100} value={75} />
             </CardContent>
           </Card>
         </div>
