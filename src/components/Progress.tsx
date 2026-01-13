@@ -28,6 +28,10 @@ const progressIndicatorVariants = cva('rounded-full border-none', {
       secondary: 'from-muted-foreground to-muted-foreground/75',
     },
   },
+  defaultVariants: {
+    orientation: 'horizontal',
+    variant: 'default',
+  },
 });
 
 // Great that useRender got 'progress' component
