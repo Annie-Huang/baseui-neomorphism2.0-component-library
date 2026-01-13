@@ -23,7 +23,7 @@ const NeuProgress = (props: ProgressProps) => {
 
   return (
     <Progress.Root value={value} {...otherProps}>
-      <Progress.Track>
+      <Progress.Track className='h-full w-full'>
         <Progress.Indicator />
       </Progress.Track>
     </Progress.Root>
