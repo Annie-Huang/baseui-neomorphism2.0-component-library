@@ -11,6 +11,9 @@ https://cva.style/docs
 https://ui.shadcn.com/docs/dark-mode
 https://ui.shadcn.com/docs/dark-mode/vite
 https://tailwindcss.com/docs/dark-mode#toggling-dark-mode-manually
+
+https://base-ui.com/react/overview/quick-start
+https://base-ui.com/react/utils/use-render#migrating-from-radix-ui      <-- concept of render
 ========================================================================================
 
 PS C:\react> npm create vite@latest

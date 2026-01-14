@@ -31,6 +31,10 @@ function App() {
           Submit
         </Button>
 
+        {/* Concept of a render */}
+        <a href='/link'>Go to this link</a>
+        <Button render={<a href='/link'>Go to this link</a>} />
+
         <div className='m-6'>
           <Card>
             <CardHeader>
