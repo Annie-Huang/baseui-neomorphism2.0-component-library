@@ -1,5 +1,8 @@
-import { Tabs } from '@base-ui/react';
+import { mergeProps, Tabs } from '@base-ui/react';
 import React from 'react';
+import { cva } from 'class-variance-authority';
+
+const tabsRootVariants = cva('w-full');
 
 // interface TabRootProps extends React.ComponentProps<typeof Tabs.Root> {}
 // Change to the following to get rid of ESLint error of:
@@ -7,5 +10,7 @@ import React from 'react';
 type TabRootProps = React.ComponentProps<typeof Tabs.Root>;
 
 export const TabsRoot = (props: TabRootProps) => {
-  return <Tabs.Root {...props} />;
+  const rootMerge = mergeProps(props, { className: tabsRootVariants() });
+
+  return <Tabs.Root {...rootMerge} />;
 };
