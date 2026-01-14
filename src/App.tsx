@@ -12,6 +12,7 @@ import {
 // import NeuCheckbox from './components/Checkbox.tsx';
 import NeuSlider from './components/Slider.tsx';
 import NeuProgress from './components/Progress.tsx';
+import Input from './components/Input.tsx';
 
 function App() {
   return (
@@ -67,6 +68,9 @@ function App() {
               <NeuProgress max={100} value={50} />
               <NeuProgress max={100} value={75} />
             </CardContent>
+            <CardFooter>
+              <Input></Input>
+            </CardFooter>
           </Card>
         </div>
       </div>
