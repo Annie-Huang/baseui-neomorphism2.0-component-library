@@ -16,7 +16,7 @@
   --color-primary: var(--color-indigo-600);
   --color-destructive: var(--color-red-600);
   --color-warning: var(--color-orange-600);
-  --color-border: var(--color-zinc-100); /* When you add a color variable, you will need to add for both, otherwise it will not take effect */
+  --color-border: var(--color-zinc-200); /* When you add a color variable, you will need to add for both, otherwise it will not take effect */
   --color-shadow: rgba(0,0,0, 0.2);
   --color-highlight: rgba(255, 255, 255, 1);
 
