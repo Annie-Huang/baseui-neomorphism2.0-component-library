@@ -1,4 +1,5 @@
-import { cva } from 'class-variance-authority';
+import { cva, type VariantProps } from 'class-variance-authority';
+import { useRender } from '@base-ui/react';
 
 const badgeVariants = cva(
   'inline-flex items-center rounded-full border-2 border-background px-2.5 py-0.5 text-sm font-semibold ' +
@@ -20,8 +21,13 @@ const badgeVariants = cva(
     },
   },
 );
-const NeuBadge = () => {
+
+interface BadgeProps
+  extends useRender.ComponentProps<'div'>,
+    VariantProps<typeof badgeVariants> {}
+
+const Badge = (props: BadgeProps) => {
   return <div></div>;
 };
 
-export default NeuBadge;
+export default Badge;
