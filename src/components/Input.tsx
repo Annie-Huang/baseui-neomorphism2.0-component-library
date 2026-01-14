@@ -1,9 +1,16 @@
 import { mergeProps, useRender } from '@base-ui/react';
-import type { VariantProps } from 'class-variance-authority';
+import { cva } from 'class-variance-authority';
 
-interface InputProps
-  extends useRender.ComponentProps<'input'>,
-    VariantProps<typeof inputVariants> {}
+const inputVariants = cva(
+  'flex w-full rounded-md border-1 border-highlight bg-background px-3 py-2 text-sm ring-offset-background ' +
+    'file:border-0 file:bg-transparent placeholder:text-muted-foreground focus-visible:outline-none ' +
+    'focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-foreground shadow-inset disabled:opacity-50',
+);
+
+// interface InputProps extends useRender.ComponentProps<'input'> {}
+// Change to the following to get rid of ESLint error of:
+// ESLint: An interface declaring no members is equivalent to its supertype. (@typescript-eslint/no-empty-object-type)
+type InputProps = useRender.ComponentProps<'input'>;
 
 const Input = (props: InputProps) => {
   const mergedProps = mergeProps(props, {
