@@ -1,5 +1,5 @@
 import { cva, type VariantProps } from 'class-variance-authority';
-import { useRender } from '@base-ui/react';
+import { mergeProps, useRender } from '@base-ui/react';
 
 const badgeVariants = cva(
   'inline-flex items-center rounded-full border-2 border-background px-2.5 py-0.5 text-sm font-semibold ' +
@@ -27,7 +27,19 @@ interface BadgeProps
     VariantProps<typeof badgeVariants> {}
 
 const Badge = (props: BadgeProps) => {
-  return <div></div>;
+  const { render, className, variant, ...otherProps } = props;
+
+  const mergedProps = mergeProps(otherProps, {
+    className: badgeVariants({ variant, className }),
+  });
+
+  const element = useRender({
+    defaultTagName: 'div',
+    render,
+    props: mergedProps,
+  });
+
+  return element;
 };
 
 export default Badge;
