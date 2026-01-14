@@ -1,6 +1,11 @@
 import { mergeProps, useRender } from '@base-ui/react';
+import type { VariantProps } from 'class-variance-authority';
 
-const Input = (props) => {
+interface InputProps
+  extends useRender.ComponentProps<'input'>,
+    VariantProps<typeof inputVariants> {}
+
+const Input = (props: InputProps) => {
   const mergedProps = mergeProps(props, {
     className: inputVariants(),
     type: props.type,
