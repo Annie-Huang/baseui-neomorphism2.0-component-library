@@ -68,7 +68,8 @@ function App() {
               <NeuProgress max={100} value={50} />
               <NeuProgress max={100} value={75} />
             </CardContent>
-            <CardFooter>
+            <CardFooter className='space-y-2'>
+              <Input type='email'></Input>
               <Input></Input>
             </CardFooter>
           </Card>
