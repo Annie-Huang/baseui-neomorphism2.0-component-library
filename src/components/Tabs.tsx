@@ -34,3 +34,13 @@ export const TabsTab = (props: TabsTabProps) => {
   // It ask to inject the value explicitly.
   return <Tabs.Tab {...rootMerge} value={rootMerge.value} />;
 };
+
+const tabsListVariants = cva('w-full');
+
+type TabsListProps = React.ComponentProps<typeof Tabs.List>;
+
+export const TabsList = (props: TabsListProps) => {
+  const rootMerge = mergeProps(props, { tabsListVariants });
+
+  return <Tabs.List {...rootMerge} />;
+};
