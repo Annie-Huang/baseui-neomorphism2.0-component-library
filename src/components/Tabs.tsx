@@ -47,3 +47,15 @@ export const TabsList = (props: TabsListProps) => {
 
   return <Tabs.List {...listMerge} />;
 };
+
+const tabsIndicatorVariants = cva('');
+
+type TabsIndicatorListProps = React.ComponentProps<typeof Tabs.Indicator>;
+
+export const TabsIndicator = (props: TabsIndicatorListProps) => {
+  const mergeIndicator = mergeProps(props, {
+    className: { tabsIndicatorVariants },
+  });
+
+  return <Tabs.List {...mergeIndicator} />;
+};
