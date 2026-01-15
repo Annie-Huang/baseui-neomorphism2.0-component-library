@@ -22,5 +22,7 @@ type TabsTabProps = React.ComponentProps<typeof Tabs.Tab>;
 export const TabsTab = (props: TabsTabProps) => {
   const rootMerge = mergeProps(props, { className: tabsTabVariants() });
 
-  return <Tabs.Tab {...rootMerge} />;
+  // return <Tabs.Tab {...rootMerge} />;
+  // It ask to inject the value explicitly.
+  return <Tabs.Tab {...rootMerge} value={rootMerge.value} />;
 };
