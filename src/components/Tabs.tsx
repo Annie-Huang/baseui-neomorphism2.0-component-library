@@ -35,7 +35,10 @@ export const TabsTab = (props: TabsTabProps) => {
   return <Tabs.Tab {...rootMerge} value={rootMerge.value} />;
 };
 
-const tabsListVariants = cva('w-full');
+const tabsListVariants = cva(
+  'relative inline-flex h-12 items-center justify-center rounded-2xl bg-linear-to-tl from-background ' +
+    'to-highlight/75 p-1 text-muted-foreground shadow-raised border-3 border-border gap-4',
+);
 
 type TabsListProps = React.ComponentProps<typeof Tabs.List>;
 
