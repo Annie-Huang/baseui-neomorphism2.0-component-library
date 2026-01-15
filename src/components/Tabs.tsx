@@ -15,15 +15,12 @@ export const TabsRoot = (props: TabRootProps) => {
   return <Tabs.Root {...rootMerge} />;
 };
 
-const tabsRootVariants = cva('w-full');
+const tabsTabVariants = cva('w-full');
 
-// interface TabRootProps extends React.ComponentProps<typeof Tabs.Root> {}
-// Change to the following to get rid of ESLint error of:
-// ESLint: An interface declaring no members is equivalent to its supertype. (@typescript-eslint/no-empty-object-type)
-type TabRootProps = React.ComponentProps<typeof Tabs.Root>;
+type TabTabProps = React.ComponentProps<typeof Tabs.Tab>;
 
-export const TabsRoot = (props: TabRootProps) => {
-  const rootMerge = mergeProps(props, { className: tabsRootVariants() });
+export const TabsTab = (props: TabTabProps) => {
+  const rootMerge = mergeProps(props, { className: tabsTabVariants() });
 
-  return <Tabs.Root {...rootMerge} />;
+  return <Tabs.Tab {...rootMerge} />;
 };
