@@ -48,7 +48,9 @@ export const TabsList = (props: TabsListProps) => {
   return <Tabs.List {...listMerge} />;
 };
 
-const tabsIndicatorVariants = cva('');
+const tabsIndicatorVariants = cva(
+  'absolute rounded-sm bg-background shadow-raised transition-all duration-200 border-1 border-background',
+);
 
 type TabsIndicatorListProps = React.ComponentProps<typeof Tabs.Indicator>;
 
