@@ -11,7 +11,7 @@ type TabsRootProps = React.ComponentProps<typeof Tabs.Root>;
 
 export const TabsRoot = (props: TabsRootProps) => {
   // const rootMerge = mergeProps(props, { className: tabsRootVariants() });
-  const rootMerge = mergeProps(props, { tabsRootVariants });
+  const rootMerge = mergeProps(props, { className: { tabsRootVariants } });
 
   return <Tabs.Root {...rootMerge} />;
 };
@@ -28,11 +28,11 @@ type TabsTabProps = React.ComponentProps<typeof Tabs.Tab>;
 
 export const TabsTab = (props: TabsTabProps) => {
   // const rootMerge = mergeProps(props, { className: tabsTabVariants() });
-  const rootMerge = mergeProps(props, { tabsTabVariants });
+  const tabMerge = mergeProps(props, { className: { tabsTabVariants } });
 
-  // return <Tabs.Tab {...rootMerge} />;
+  // return <Tabs.Tab {...tabMerge} />;
   // It ask to inject the value explicitly.
-  return <Tabs.Tab {...rootMerge} value={rootMerge.value} />;
+  return <Tabs.Tab {...tabMerge} value={tabMerge.value} />;
 };
 
 const tabsListVariants = cva(
@@ -43,7 +43,7 @@ const tabsListVariants = cva(
 type TabsListProps = React.ComponentProps<typeof Tabs.List>;
 
 export const TabsList = (props: TabsListProps) => {
-  const rootMerge = mergeProps(props, { tabsListVariants });
+  const listMerge = mergeProps(props, { className: { tabsListVariants } });
 
-  return <Tabs.List {...rootMerge} />;
+  return <Tabs.List {...listMerge} />;
 };
