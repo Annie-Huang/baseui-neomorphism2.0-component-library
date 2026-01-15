@@ -10,7 +10,8 @@ const tabsRootVariants = cva('w-full');
 type TabsRootProps = React.ComponentProps<typeof Tabs.Root>;
 
 export const TabsRoot = (props: TabsRootProps) => {
-  const rootMerge = mergeProps(props, { className: tabsRootVariants() });
+  // const rootMerge = mergeProps(props, { className: tabsRootVariants() });
+  const rootMerge = mergeProps(props, { tabsRootVariants });
 
   return <Tabs.Root {...rootMerge} />;
 };
@@ -19,14 +20,15 @@ const tabsTabVariants = cva(
   'inline-flex items-center justify-center whitespace-nowrap rounded-xl px-4 py-2 text-sm font-medium ' +
     'ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ' +
     'focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[selected]:bg-background ' +
-    'data-[selected]:text-foreground data-[selected]:shadow-inset cursor-pointer hover:text-foreground duration-200 ' +
+    'data-[selected]:text-foreground data-[selected]:shadow-inset cursor-pointer hover:text-foreground duration-350 ' +
     'relative z-10',
 );
 
 type TabsTabProps = React.ComponentProps<typeof Tabs.Tab>;
 
 export const TabsTab = (props: TabsTabProps) => {
-  const rootMerge = mergeProps(props, { className: tabsTabVariants() });
+  // const rootMerge = mergeProps(props, { className: tabsTabVariants() });
+  const rootMerge = mergeProps(props, { tabsTabVariants });
 
   // return <Tabs.Tab {...rootMerge} />;
   // It ask to inject the value explicitly.
