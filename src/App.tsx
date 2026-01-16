@@ -107,9 +107,11 @@ function App() {
     <main>
       <Nav />
       {/* Hero Section */}
-      <section>
-        <h1>Beautiful components with neumorphic design</h1>
-        <p>
+      <section className='max-w-4xl px-8 py-12 mx-auto text-center'>
+        <h1 className='md:text-3xl text-xl font-semibold tracking-tight'>
+          Beautiful components with neumorphic design
+        </h1>
+        <p className='mt-1 md:text-lg text-sm text-muted-foreground'>
           Crafter with care and attention to detail. Built on top of Base UI
           with Tailwind CSS. Accessible, customizable and ready to use in your
           projects.
