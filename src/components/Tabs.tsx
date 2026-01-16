@@ -52,9 +52,9 @@ const tabsIndicatorVariants = cva(
   'absolute rounded-sm bg-background shadow-raised transition-all duration-200 border-1 border-background',
 );
 
-type TabsIndicatorListProps = React.ComponentProps<typeof Tabs.Indicator>;
+type TabsIndicatorProps = React.ComponentProps<typeof Tabs.Indicator>;
 
-export const TabsIndicator = (props: TabsIndicatorListProps) => {
+export const TabsIndicator = (props: TabsIndicatorProps) => {
   const mergeIndicator = mergeProps(props, {
     className: { tabsIndicatorVariants },
   });
