@@ -127,6 +127,14 @@ function App() {
                 Enjoy high quality music streaming
               </CardDescription>
             </CardHeader>
+            <CardContent>
+              <div className='space-y-8'>
+                <img
+                  src='https://www.normanrecords.com/artwork/medium/233/115233-gorillaz-gorillaz.jpg'
+                  alt='gorillaz'
+                />
+              </div>
+            </CardContent>
           </Card>
         </div>
         <div className='flex-1 space-y-6'></div>
