@@ -15,7 +15,7 @@ import NeuProgress from './components/Progress.tsx';
 import Input from './components/Input.tsx';
 import { TabsList, TabsPanel, TabsRoot, TabsTab } from './components/Tabs.tsx';
 
-function App() {
+function App1() {
   return (
     <main>
       <Nav />
@@ -102,4 +102,11 @@ function App() {
   );
 }
 
+function App() {
+  return (
+    <main>
+      <Nav />
+    </main>
+  );
+}
 export default App;
