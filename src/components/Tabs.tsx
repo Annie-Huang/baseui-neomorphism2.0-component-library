@@ -62,7 +62,10 @@ export const TabsIndicator = (props: TabsIndicatorProps) => {
   return <Tabs.List {...mergeIndicator} />;
 };
 
-const tabsPanelVariants = cva('');
+const tabsPanelVariants = cva(
+  'mt-4 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ' +
+    'focus-visible:ring-offset-2',
+);
 
 type TabsPanelProps = React.ComponentProps<typeof Tabs.Panel>;
 
