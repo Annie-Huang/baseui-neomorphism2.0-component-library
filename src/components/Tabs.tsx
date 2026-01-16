@@ -70,11 +70,11 @@ const tabsPanelVariants = cva(
 type TabsPanelProps = React.ComponentProps<typeof Tabs.Panel>;
 
 export const TabsPanel = (props: TabsPanelProps) => {
-  const mergeIndicator = mergeProps(props, {
+  const panelMerge = mergeProps(props, {
     className: { tabsPanelVariants },
   });
 
-  // return <Tabs.Panel {...mergeIndicator} />;
+  // return <Tabs.Panel {...panelMerge} />;
   // It ask to inject the value explicitly.
-  return <Tabs.Panel {...mergeIndicator} value={mergeIndicator.value} />;
+  return <Tabs.Panel {...panelMerge} value={panelMerge.value} />;
 };
