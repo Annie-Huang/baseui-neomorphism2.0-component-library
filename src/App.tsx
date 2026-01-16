@@ -119,7 +119,16 @@ function App() {
       </section>
 
       <section className='flex flex-col md:flex-row items-start max-w-7xl mx-auto gap-8 my-12'>
-        <div className='flex-1 space-y-6'></div>
+        <div className='flex-1 space-y-6'>
+          <Card>
+            <CardHeader>
+              <CardTitle>Music Player</CardTitle>
+              <CardDescription>
+                Enjoy high quality music streaming
+              </CardDescription>
+            </CardHeader>
+          </Card>
+        </div>
         <div className='flex-1 space-y-6'></div>
       </section>
     </main>
