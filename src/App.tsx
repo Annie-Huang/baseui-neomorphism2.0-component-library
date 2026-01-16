@@ -130,6 +130,7 @@ function App() {
             <CardContent>
               <div className='space-y-8'>
                 <img
+                  className='w-56 h-56 rounded-full shadow-raised border-4 border-border'
                   src='https://www.normanrecords.com/artwork/medium/233/115233-gorillaz-gorillaz.jpg'
                   alt='gorillaz'
                 />
