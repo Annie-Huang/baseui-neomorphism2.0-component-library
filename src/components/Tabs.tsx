@@ -18,8 +18,8 @@ export const TabsRoot = (props: TabsRootProps) => {
 const tabsTabVariants = cva(
   'inline-flex items-center justify-center whitespace-nowrap rounded-xl px-4 py-2 text-sm font-medium ' +
     'ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ' +
-    'focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[selected]:bg-background ' +
-    'data-[selected]:text-foreground data-[selected]:shadow-inset cursor-pointer hover:text-foreground duration-350 ' +
+    'focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-active:bg-background ' +
+    'data-active:text-foreground data-active:shadow-inset cursor-pointer hover:text-foreground duration-350 ' +
     'relative z-10',
 );
 
