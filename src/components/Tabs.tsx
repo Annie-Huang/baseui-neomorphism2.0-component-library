@@ -61,3 +61,17 @@ export const TabsIndicator = (props: TabsIndicatorProps) => {
 
   return <Tabs.List {...mergeIndicator} />;
 };
+
+const tabsPanelVariants = cva('');
+
+type TabsPanelProps = React.ComponentProps<typeof Tabs.Panel>;
+
+export const TabsPanel = (props: TabsPanelProps) => {
+  const mergeIndicator = mergeProps(props, {
+    className: { tabsPanelVariants },
+  });
+
+  // return <Tabs.Panel {...mergeIndicator} />;
+  // It ask to inject the value explicitly.
+  return <Tabs.Panel {...mergeIndicator} value={mergeIndicator.value} />;
+};
