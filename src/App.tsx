@@ -82,7 +82,7 @@ function App() {
           <Card>
             <CardHeader>
               <TabsRoot>
-                <TabsList>
+                <TabsList className='space-x-4'>
                   <TabsTab value='overview'>Overview</TabsTab>
                   <TabsTab value='user'>User</TabsTab>
                 </TabsList>

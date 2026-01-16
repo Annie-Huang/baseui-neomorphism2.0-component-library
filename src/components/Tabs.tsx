@@ -10,8 +10,7 @@ const tabsRootVariants = cva('w-full');
 type TabsRootProps = React.ComponentProps<typeof Tabs.Root>;
 
 export const TabsRoot = (props: TabsRootProps) => {
-  // const rootMerge = mergeProps(props, { className: tabsRootVariants() });
-  const rootMerge = mergeProps(props, { className: { tabsRootVariants } });
+  const rootMerge = mergeProps(props, { className: tabsRootVariants() });
 
   return <Tabs.Root {...rootMerge} />;
 };
@@ -27,8 +26,7 @@ const tabsTabVariants = cva(
 type TabsTabProps = React.ComponentProps<typeof Tabs.Tab>;
 
 export const TabsTab = (props: TabsTabProps) => {
-  // const rootMerge = mergeProps(props, { className: tabsTabVariants() });
-  const tabMerge = mergeProps(props, { className: { tabsTabVariants } });
+  const tabMerge = mergeProps(props, { className: tabsTabVariants() });
 
   // return <Tabs.Tab {...tabMerge} />;
   // It ask to inject the value explicitly.
@@ -43,7 +41,7 @@ const tabsListVariants = cva(
 type TabsListProps = React.ComponentProps<typeof Tabs.List>;
 
 export const TabsList = (props: TabsListProps) => {
-  const listMerge = mergeProps(props, { className: { tabsListVariants } });
+  const listMerge = mergeProps(props, { className: tabsListVariants() });
 
   return <Tabs.List {...listMerge} />;
 };
@@ -56,7 +54,7 @@ type TabsIndicatorProps = React.ComponentProps<typeof Tabs.Indicator>;
 
 export const TabsIndicator = (props: TabsIndicatorProps) => {
   const mergeIndicator = mergeProps(props, {
-    className: { tabsIndicatorVariants },
+    className: tabsIndicatorVariants(),
   });
 
   return <Tabs.List {...mergeIndicator} />;
@@ -71,7 +69,7 @@ type TabsPanelProps = React.ComponentProps<typeof Tabs.Panel>;
 
 export const TabsPanel = (props: TabsPanelProps) => {
   const panelMerge = mergeProps(props, {
-    className: { tabsPanelVariants },
+    className: tabsPanelVariants(),
   });
 
   // return <Tabs.Panel {...panelMerge} />;
