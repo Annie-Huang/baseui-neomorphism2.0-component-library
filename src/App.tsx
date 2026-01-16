@@ -13,6 +13,7 @@ import {
 import NeuSlider from './components/Slider.tsx';
 import NeuProgress from './components/Progress.tsx';
 import Input from './components/Input.tsx';
+import { TabsList, TabsPanel, TabsRoot, TabsTab } from './components/Tabs.tsx';
 
 function App() {
   return (
@@ -76,6 +77,24 @@ function App() {
               <Input type='email'></Input>
               <Input></Input>
             </CardFooter>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <TabsRoot>
+                <TabsList>
+                  <TabsTab value='overview'>Overview</TabsTab>
+                  <TabsTab value='user'>User</TabsTab>
+                </TabsList>
+                <TabsPanel value='overview'>
+                  <h2>This is overview</h2>
+                  <p>This is more info about the overview</p>
+                </TabsPanel>
+                <TabsPanel value='user'>
+                  <h2>This is user</h2>
+                </TabsPanel>
+              </TabsRoot>
+            </CardHeader>
           </Card>
         </div>
       </div>
