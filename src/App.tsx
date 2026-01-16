@@ -106,6 +106,15 @@ function App() {
   return (
     <main>
       <Nav />
+      {/* Hero Section */}
+      <section>
+        <h1>Beautiful components with neumorphic design</h1>
+        <p>
+          Crafter with care and attention to detail. Built on top of Base UI
+          with Tailwind CSS. Accessible, customizable and ready to use in your
+          projects.
+        </p>
+      </section>
     </main>
   );
 }
