@@ -235,6 +235,16 @@ function App() {
                   </div>
                 </div>
               </div>
+
+              <div className='mt-4'>
+                <label
+                  htmlFor='notes'
+                  className='mb-2 block text-xs text-muted-foreground'
+                >
+                  Notes
+                </label>
+                <Input placeholder='Notes' id='notes' />
+              </div>
             </CardContent>
           </Card>
         </div>
