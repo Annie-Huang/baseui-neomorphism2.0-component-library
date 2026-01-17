@@ -128,7 +128,7 @@ function App() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <div className='space-y-8'>
+              <div className='space-y-8 flex flex-col justify-center items-center'>
                 <img
                   className='w-56 h-56 rounded-full shadow-raised border-4 border-border'
                   src='https://www.normanrecords.com/artwork/medium/233/115233-gorillaz-gorillaz.jpg'
@@ -139,7 +139,7 @@ function App() {
                   <CardDescription>Gorillaz</CardDescription>
                 </div>
                 <div>
-                  <NeuProgress max={100} value={45} />
+                  <NeuProgress className='min-w-xs' max={100} value={45} />
                   <div className='flex justify-between mt-2 text-xs text-muted-foreground'>
                     <span>0:00</span>
                     <span>3:32</span>
