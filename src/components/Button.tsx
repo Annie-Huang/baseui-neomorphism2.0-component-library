@@ -85,7 +85,6 @@ const Button = (props: ButtonProps) => {
         size: props.size,
         shape: props.shape,
       }), // so you can see color primary of the first button
-      props.className, // also allow you to overwrite from the className props you put into inline styling.
     ),
   });
 
