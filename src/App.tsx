@@ -14,7 +14,8 @@ import NeuSlider from './components/Slider.tsx';
 import NeuProgress from './components/Progress.tsx';
 import Input from './components/Input.tsx';
 import { TabsList, TabsPanel, TabsRoot, TabsTab } from './components/Tabs.tsx';
-import { Play, SkipBack, SkipForward } from 'lucide-react';
+import { Pause, Play, SkipBack, SkipForward } from 'lucide-react';
+import { useState } from 'react';
 
 function App1() {
   return (
@@ -104,6 +105,8 @@ function App1() {
 }
 
 function App() {
+  const [isPlaying, setIsPlaying] = useState(false);
+
   return (
     <main>
       <Nav />
@@ -155,8 +158,13 @@ function App() {
                     size='icon'
                     shape='circle'
                     variant='primary'
+                    onClick={() => setIsPlaying(!isPlaying)}
                   >
-                    <Play className='w-4 h-4' />
+                    {isPlaying ? (
+                      <Pause className='w-4 h-4' />
+                    ) : (
+                      <Play className='w-4 h-4' />
+                    )}
                   </Button>
                   <Button size='icon' shape='circle' variant='primary'>
                     <SkipForward className='w-4 h-4' />
