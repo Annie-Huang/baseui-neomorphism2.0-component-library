@@ -193,6 +193,14 @@ function App() {
                 access to all features.
               </CardDescription>
             </CardHeader>
+            <CardContent>
+              <div className='space-y-1'>
+                <CardTitle>Plan</CardTitle>
+                <CardDescription>
+                  Select the plan that best fits your needs
+                </CardDescription>
+              </div>
+            </CardContent>
           </Card>
         </div>
         <div className='flex-1 space-y-6'></div>
