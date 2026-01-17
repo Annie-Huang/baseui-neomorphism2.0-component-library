@@ -138,6 +138,13 @@ function App() {
                   <CardTitle>Feel good inc.</CardTitle>
                   <CardDescription>Gorillaz</CardDescription>
                 </div>
+                <div>
+                  <NeuProgress max={100} value={45} />
+                  <div className='flex justify-between mt-2 text-xs text-muted-foreground'>
+                    <span>0:00</span>
+                    <span>3:32</span>
+                  </div>
+                </div>
               </div>
             </CardContent>
           </Card>
