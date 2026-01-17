@@ -150,7 +150,12 @@ function App() {
                   </div>
                 </div>
                 <div className='flex items-center justify-center gap-4'>
-                  <Button size='icon' shape='circle' variant='primary'>
+                  <Button
+                    aria-label='Previous Track'
+                    size='icon'
+                    shape='circle'
+                    variant='primary'
+                  >
                     <SkipBack className='w-4 h-4' />
                   </Button>
                   <Button
@@ -158,6 +163,7 @@ function App() {
                     size='icon'
                     shape='circle'
                     variant='primary'
+                    aria-label={isPlaying ? 'Pause' : 'Play'}
                     onClick={() => setIsPlaying(!isPlaying)}
                   >
                     {isPlaying ? (
@@ -166,7 +172,12 @@ function App() {
                       <Play className='w-4 h-4' />
                     )}
                   </Button>
-                  <Button size='icon' shape='circle' variant='primary'>
+                  <Button
+                    aria-label='Next Track'
+                    size='icon'
+                    shape='circle'
+                    variant='primary'
+                  >
                     <SkipForward className='w-4 h-4' />
                   </Button>
                 </div>
