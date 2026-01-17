@@ -244,6 +244,12 @@ function App() {
                   Notes
                 </label>
                 <Input placeholder='Notes' id='notes' />
+                <div className='mt-4 flex items-center gap-2'>
+                  <NeuCheckbox id='terms' />
+                  <label htmlFor='terms'>
+                    I agree to teh terms and conditions
+                  </label>
+                </div>
               </div>
             </CardContent>
           </Card>
