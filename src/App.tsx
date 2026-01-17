@@ -134,6 +134,10 @@ function App() {
                   src='https://www.normanrecords.com/artwork/medium/233/115233-gorillaz-gorillaz.jpg'
                   alt='gorillaz'
                 />
+                <div className='text-center space-y-2'>
+                  <CardTitle>Feel good inc.</CardTitle>
+                  <CardDescription>Gorillaz</CardDescription>
+                </div>
               </div>
             </CardContent>
           </Card>
