@@ -14,7 +14,7 @@ import NeuSlider from './components/Slider.tsx';
 import NeuProgress from './components/Progress.tsx';
 import Input from './components/Input.tsx';
 import { TabsList, TabsPanel, TabsRoot, TabsTab } from './components/Tabs.tsx';
-import { SkipBack } from 'lucide-react';
+import { Play, SkipBack, SkipForward } from 'lucide-react';
 
 function App1() {
   return (
@@ -146,9 +146,20 @@ function App() {
                     <span>3:32</span>
                   </div>
                 </div>
-                <div className='flex items-center justify-center gap-6'>
+                <div className='flex items-center justify-center gap-4'>
                   <Button size='icon' shape='circle' variant='primary'>
                     <SkipBack className='w-4 h-4' />
+                  </Button>
+                  <Button
+                    className='w-20 h-12'
+                    size='icon'
+                    shape='circle'
+                    variant='primary'
+                  >
+                    <Play className='w-4 h-4' />
+                  </Button>
+                  <Button size='icon' shape='circle' variant='primary'>
+                    <SkipForward className='w-4 h-4' />
                   </Button>
                 </div>
               </div>
