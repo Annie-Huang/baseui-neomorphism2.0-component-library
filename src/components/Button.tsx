@@ -92,6 +92,7 @@ const Button = (props: ButtonProps) => {
       size: props.size,
       shape: props.shape,
     }), // so you can see color primary of the first button
+    tabIndex: 0, // To fix safari problem. https://stackoverflow.com/questions/1848390/safari-ignoring-tabindex
   });
 
   const element = useRender({
