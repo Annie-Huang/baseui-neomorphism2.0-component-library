@@ -252,6 +252,10 @@ function App() {
                 </div>
               </div>
             </CardContent>
+            <CardFooter className='flex gap-4'>
+              <Button variant='destructive'>Cancel</Button>
+              <Button variant='primary'>Upgrade Plan</Button>
+            </CardFooter>
           </Card>
         </div>
         <div className='flex-1 space-y-6'></div>
