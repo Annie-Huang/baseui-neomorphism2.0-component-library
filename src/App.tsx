@@ -217,6 +217,22 @@ function App() {
                       <span className='text-sm'>Starter plan</span>
                     </div>
                   </div>
+
+                  <div
+                    className={
+                      'flex flex-col p-4 rounded-lg cursor-pointer transition-all border-3 border-border duration-350 ' +
+                      `${selectedPlan === 'starter' ? 'bg-primary/10 shadow-inset' : 'bg-background shadow-raised'}`
+                    }
+                    onClick={() => setSelectedPlan('starter')}
+                  >
+                    <div className='flex items-center space-x-2 mb-2'>
+                      <NeuCheckbox
+                        id='starter-plan'
+                        checked={selectedPlan === 'starter'}
+                      />
+                      <span className='text-sm'>Starter plan</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </CardContent>
