@@ -106,6 +106,7 @@ function App1() {
 
 function App() {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [selectedPlan, setSelectedPlan] = useState('starter');
 
   return (
     <main>
