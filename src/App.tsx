@@ -184,6 +184,16 @@ function App() {
               </div>
             </CardContent>
           </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Upgrade your subscription</CardTitle>
+              <CardDescription>
+                You are currently on a free plan. Upgrade to the pro plan to get
+                access to all features.
+              </CardDescription>
+            </CardHeader>
+          </Card>
         </div>
         <div className='flex-1 space-y-6'></div>
       </section>
