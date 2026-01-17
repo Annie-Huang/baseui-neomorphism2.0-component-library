@@ -221,16 +221,16 @@ function App() {
                   <div
                     className={
                       'flex flex-col p-4 rounded-lg cursor-pointer transition-all border-3 border-border duration-350 ' +
-                      `${selectedPlan === 'starter' ? 'bg-primary/10 shadow-inset' : 'bg-background shadow-raised'}`
+                      `${selectedPlan === 'pro' ? 'bg-primary/10 shadow-inset' : 'bg-background shadow-raised'}`
                     }
-                    onClick={() => setSelectedPlan('starter')}
+                    onClick={() => setSelectedPlan('pro')}
                   >
                     <div className='flex items-center space-x-2 mb-2'>
                       <NeuCheckbox
                         id='starter-plan'
-                        checked={selectedPlan === 'starter'}
+                        checked={selectedPlan === 'pro'}
                       />
-                      <span className='text-sm'>Starter plan</span>
+                      <span className='text-sm'>Pro plan</span>
                     </div>
                   </div>
                 </div>
