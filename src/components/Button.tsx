@@ -2,7 +2,7 @@
 // import type { FC, ReactNode } from 'react';
 import { useRender, mergeProps } from '@base-ui/react';
 import { cva, type VariantProps } from 'class-variance-authority';
-import { twMerge } from 'tailwind-merge';
+// import { twMerge } from 'tailwind-merge';
 
 // interface ButtonProps {
 //   children?: ReactNode;
@@ -79,13 +79,19 @@ interface ButtonProps
 const Button = (props: ButtonProps) => {
   const mergedProps = mergeProps(props, {
     // className: buttonVariants({ variant: props.variant, size: props.size }),
-    className: twMerge(
+    /*    className: twMerge(
       buttonVariants({
         variant: props.variant,
         size: props.size,
         shape: props.shape,
       }), // so you can see color primary of the first button
-    ),
+      props.className, // also allow you to overwrite from the className props you put into inline styling.
+    ),*/
+    className: buttonVariants({
+      variant: props.variant,
+      size: props.size,
+      shape: props.shape,
+    }), // so you can see color primary of the first button
   });
 
   const element = useRender({
