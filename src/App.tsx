@@ -343,7 +343,7 @@ function App() {
                     use its features.
                   </p>
                 </div>
-                <NeuSwitch />
+                <NeuSwitch disabled defaultChecked />
               </div>
 
               <div className='flex items-center justify-between'>
