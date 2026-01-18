@@ -17,7 +17,7 @@ import { TabsList, TabsPanel, TabsRoot, TabsTab } from './components/Tabs.tsx';
 import { Pause, Play, SkipBack, SkipForward } from 'lucide-react';
 import { useState } from 'react';
 import NeuCheckbox from './components/Checkbox.tsx';
-import { ResponsiveContainer } from 'recharts';
+import { Line, LineChart, ResponsiveContainer } from 'recharts';
 
 function App1() {
   return (
@@ -269,10 +269,17 @@ function App() {
               <p className='text-sm'>+201% from last month</p>
             </CardHeader>
             <CardContent className='h-48'>
-              <ResponsiveContainer
-                width='100%'
-                height='100%'
-              ></ResponsiveContainer>
+              <ResponsiveContainer width='100%' height='100%'>
+                <LineChart data={}>
+                  <Line
+                    type='monotone'
+                    dataKey='value'
+                    stroke='var(--color-primary)'
+                    strokeWidth={3}
+                    dot={{ fill: 'var(--color-primary)' }}
+                  />
+                </LineChart>
+              </ResponsiveContainer>
             </CardContent>
           </Card>
         </div>
