@@ -258,7 +258,17 @@ function App() {
             </CardFooter>
           </Card>
         </div>
-        <div className='flex-1 space-y-6'></div>
+        <div className='flex-1 space-y-6'>
+          <Card>
+            <CardHeader>
+              <div className='flex items-center justify-between'>
+                <CardTitle>Total Revenue</CardTitle>
+              </div>
+              <CardTitle className='text-3xl font-bold'>#15,231.89</CardTitle>
+              <p className='text-sm'>+201% from last month</p>
+            </CardHeader>
+          </Card>
+        </div>
       </section>
     </main>
   );
