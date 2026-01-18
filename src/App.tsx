@@ -357,6 +357,10 @@ function App() {
                 <NeuSwitch />
               </div>
             </CardContent>
+
+            <CardFooter>
+              <Button>Save Preferences</Button>
+            </CardFooter>
           </Card>
         </div>
       </section>
