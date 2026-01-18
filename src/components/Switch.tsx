@@ -5,7 +5,7 @@ import { cva, type VariantProps } from 'class-variance-authority';
 const switchVariants = cva(
   'inline-block cursor-pointer h-5.5 w-12 rounded-full focus-visible:outline-none focus-visible:ring-offset-2 ' +
     'focus-visible:ring-foreground focus-visible:ring-2 bg-background shadow-inset data-[checked]:bg-primary border-1 ' +
-    'border-highlight data-[checked]:border-primary',
+    'border-highlight data-[checked]:border-primary data-disabled:opacity-50',
 );
 const thumbVariants = cva(
   'h-5 w-5 bg-background relative rounded-full block ease-out transition-all duration-350 border-1 border-highlight ' +
