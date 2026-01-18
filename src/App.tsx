@@ -345,6 +345,17 @@ function App() {
                 </div>
                 <NeuSwitch />
               </div>
+
+              <div className='flex items-center justify-between'>
+                <div>
+                  <p className='text-base font-medium'>Functional Cookies</p>
+                  <p className='text-sm text-muted-foreground'>
+                    These cookies allow the website to provide personalized
+                    functionality.
+                  </p>
+                </div>
+                <NeuSwitch />
+              </div>
             </CardContent>
           </Card>
         </div>
