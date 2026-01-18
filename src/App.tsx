@@ -14,7 +14,7 @@ import NeuSlider from './components/Slider.tsx';
 import NeuProgress from './components/Progress.tsx';
 import Input from './components/Input.tsx';
 import { TabsList, TabsPanel, TabsRoot, TabsTab } from './components/Tabs.tsx';
-import { Minus, Pause, Play, SkipBack, SkipForward } from 'lucide-react';
+import { Minus, Pause, Play, Plus, SkipBack, SkipForward } from 'lucide-react';
 import { useState } from 'react';
 import NeuCheckbox from './components/Checkbox.tsx';
 import { Line, LineChart, ResponsiveContainer } from 'recharts';
@@ -307,6 +307,17 @@ function App() {
                   aria-label='Decrease daily calorie goal'
                 >
                   <Minus />
+                </Button>
+                <div className='text-center'>
+                  <CardTitle className='text-2xl'>350</CardTitle>
+                  <p>CALORIES/DAY</p>
+                </div>
+                <Button
+                  size='icon'
+                  shape='circle'
+                  aria-label='Increase daily calorie goal'
+                >
+                  <Plus />
                 </Button>
               </div>
             </CardHeader>
