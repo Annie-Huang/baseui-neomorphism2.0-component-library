@@ -321,8 +321,8 @@ function App() {
                 </Button>
               </div>
             </CardHeader>
-            <CardContent className='flex items-end justify-center gap-4 h-32'>
-              {[85, 55, 24, 89, 100, 28, 44].map((value) => (
+            <CardContent className='flex items-end justify-center gap-4 h-48'>
+              {[85, 55, 24, 89, 100, 28, 44, 11, 33, 76].map((value) => (
                 <NeuProgress key={value} value={value} orientation='vertical' />
               ))}
             </CardContent>
