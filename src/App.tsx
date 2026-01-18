@@ -327,6 +327,15 @@ function App() {
               ))}
             </CardContent>
           </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Cookie Settings</CardTitle>
+              <CardDescription>
+                Manage your cookie settings here.
+              </CardDescription>
+            </CardHeader>
+          </Card>
         </div>
       </section>
     </main>
