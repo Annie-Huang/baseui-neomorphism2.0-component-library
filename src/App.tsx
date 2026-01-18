@@ -110,6 +110,15 @@ function App() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState('starter');
 
+  const revenueData = [
+    { name: 'Jan', value: 3000 },
+    { name: 'Feb', value: 9500 },
+    { name: 'Mar', value: 8000 },
+    { name: 'Apr', value: 8500 },
+    { name: 'May', value: 12200 },
+    { name: 'Jun', value: 15031 },
+  ];
+
   return (
     <main>
       <Nav />
@@ -270,7 +279,7 @@ function App() {
             </CardHeader>
             <CardContent className='h-48'>
               <ResponsiveContainer width='100%' height='100%'>
-                <LineChart data={}>
+                <LineChart data={revenueData}>
                   <Line
                     type='monotone'
                     dataKey='value'
