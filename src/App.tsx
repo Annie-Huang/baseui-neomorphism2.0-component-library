@@ -135,7 +135,7 @@ function App() {
       </section>
 
       <section className='flex flex-col md:flex-row items-start max-w-7xl mx-auto gap-8 my-12'>
-        <div className='flex-1 space-y-6'>
+        <div className='flex-1 space-y-6 w-full'>
           <Card>
             <CardHeader>
               <CardTitle>Music Player</CardTitle>
@@ -292,6 +292,15 @@ function App() {
                 </LineChart>
               </ResponsiveContainer>
             </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Your move goal</CardTitle>
+              <CardDescription>
+                Track your weekly move goals here
+              </CardDescription>
+            </CardHeader>
           </Card>
         </div>
       </section>
