@@ -8,15 +8,14 @@ import {
   CardHeader,
   CardTitle,
 } from './components/Card.tsx';
-// import NeuSwitch from './components/Switch.tsx';
-// import NeuCheckbox from './components/Checkbox.tsx';
+import NeuSwitch from './components/Switch.tsx';
+import NeuCheckbox from './components/Checkbox.tsx';
 import NeuSlider from './components/Slider.tsx';
 import NeuProgress from './components/Progress.tsx';
 import Input from './components/Input.tsx';
 import { TabsList, TabsPanel, TabsRoot, TabsTab } from './components/Tabs.tsx';
 import { Minus, Pause, Play, Plus, SkipBack, SkipForward } from 'lucide-react';
 import { useState } from 'react';
-import NeuCheckbox from './components/Checkbox.tsx';
 import { Line, LineChart, ResponsiveContainer } from 'recharts';
 
 function App1() {
@@ -344,6 +343,7 @@ function App() {
                     use its features.
                   </p>
                 </div>
+                <NeuSwitch />
               </div>
             </CardContent>
           </Card>
