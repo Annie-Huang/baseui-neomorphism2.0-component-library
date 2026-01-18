@@ -14,6 +14,8 @@ https://tailwindcss.com/docs/dark-mode#toggling-dark-mode-manually
 
 https://base-ui.com/react/overview/quick-start
 https://base-ui.com/react/utils/use-render#migrating-from-radix-ui      <-- concept of render
+
+https://recharts.github.io/en-US/guide/getting-started/
 ========================================================================================
 
 PS C:\react> npm create vite@latest

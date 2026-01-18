@@ -335,6 +335,17 @@ function App() {
                 Manage your cookie settings here.
               </CardDescription>
             </CardHeader>
+            <CardContent className='space-y-4'>
+              <div className='flex items-center justify-between'>
+                <div>
+                  <p className='text-base font-medium'>Strictly Necessary</p>
+                  <p className='text-sm text-muted-foreground'>
+                    These cookies are essential in order to use the website and
+                    use its features.
+                  </p>
+                </div>
+              </div>
+            </CardContent>
           </Card>
         </div>
       </section>
