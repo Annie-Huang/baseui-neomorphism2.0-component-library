@@ -65,3 +65,5 @@ PS C:\react\baseui-neomorphism2.0-component-library> npm i class-variance-author
 
 PS C:\react\baseui-neomorphism2.0-component-library> npm i tailwind-merge
     <--- Allow the className define later to overwrite the one defined before head, it's like cascading.
+
+PS C:\react\baseui-neomorphism2.0-component-library> npm i recharts
