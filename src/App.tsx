@@ -17,6 +17,7 @@ import { TabsList, TabsPanel, TabsRoot, TabsTab } from './components/Tabs.tsx';
 import { Pause, Play, SkipBack, SkipForward } from 'lucide-react';
 import { useState } from 'react';
 import NeuCheckbox from './components/Checkbox.tsx';
+import { ResponsiveContainer } from 'recharts';
 
 function App1() {
   return (
@@ -267,6 +268,12 @@ function App() {
               <CardTitle className='text-3xl font-bold'>#15,231.89</CardTitle>
               <p className='text-sm'>+201% from last month</p>
             </CardHeader>
+            <CardContent className='h-48'>
+              <ResponsiveContainer
+                width='100%'
+                height='100%'
+              ></ResponsiveContainer>
+            </CardContent>
           </Card>
         </div>
       </section>
